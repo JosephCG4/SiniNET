@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="SiniestrosSOAT" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftAsegWS/SiniestrosSOAT?xsd=1" namespace="http://softasegws.services.softaseg.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="obtenerPorIdSiniestrosSOAT">
+    <part name="parameters" element="tns:obtenerPorIdSiniestrosSOAT" />
+  </message>
+  <message name="obtenerPorIdSiniestrosSOATResponse">
+    <part name="parameters" element="tns:obtenerPorIdSiniestrosSOATResponse" />
+  </message>
+  <message name="IOException">
+    <part name="fault" element="tns:IOException" />
+  </message>
+  <message name="InterruptedException">
+    <part name="fault" element="tns:InterruptedException" />
+  </message>
+  <message name="insertarSiniestrosSOAT">
+    <part name="parameters" element="tns:insertarSiniestrosSOAT" />
+  </message>
+  <message name="insertarSiniestrosSOATResponse">
+    <part name="parameters" element="tns:insertarSiniestrosSOATResponse" />
+  </message>
+  <message name="modificarSiniestrosSOAT">
+    <part name="parameters" element="tns:modificarSiniestrosSOAT" />
+  </message>
+  <message name="modificarSiniestrosSOATResponse">
+    <part name="parameters" element="tns:modificarSiniestrosSOATResponse" />
+  </message>
+  <message name="reporteSiniestrosSOAT">
+    <part name="parameters" element="tns:reporteSiniestrosSOAT" />
+  </message>
+  <message name="reporteSiniestrosSOATResponse">
+    <part name="parameters" element="tns:reporteSiniestrosSOATResponse" />
+  </message>
+  <message name="eliminarSiniestrosSOAT">
+    <part name="parameters" element="tns:eliminarSiniestrosSOAT" />
+  </message>
+  <message name="eliminarSiniestrosSOATResponse">
+    <part name="parameters" element="tns:eliminarSiniestrosSOATResponse" />
+  </message>
+  <message name="listarTodosSiniestrosSOAT">
+    <part name="parameters" element="tns:listarTodosSiniestrosSOAT" />
+  </message>
+  <message name="listarTodosSiniestrosSOATResponse">
+    <part name="parameters" element="tns:listarTodosSiniestrosSOATResponse" />
+  </message>
+  <message name="listarPorProcuradorSiniestrosSOAT">
+    <part name="parameters" element="tns:listarPorProcuradorSiniestrosSOAT" />
+  </message>
+  <message name="listarPorProcuradorSiniestrosSOATResponse">
+    <part name="parameters" element="tns:listarPorProcuradorSiniestrosSOATResponse" />
+  </message>
+  <portType name="SiniestrosSOAT">
+    <operation name="obtenerPorIdSiniestrosSOAT">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/obtenerPorIdSiniestrosSOATRequest" message="tns:obtenerPorIdSiniestrosSOAT" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/obtenerPorIdSiniestrosSOATResponse" message="tns:obtenerPorIdSiniestrosSOATResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/obtenerPorIdSiniestrosSOAT/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/obtenerPorIdSiniestrosSOAT/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="insertarSiniestrosSOAT">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/insertarSiniestrosSOATRequest" message="tns:insertarSiniestrosSOAT" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/insertarSiniestrosSOATResponse" message="tns:insertarSiniestrosSOATResponse" />
+    </operation>
+    <operation name="modificarSiniestrosSOAT">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/modificarSiniestrosSOATRequest" message="tns:modificarSiniestrosSOAT" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/modificarSiniestrosSOATResponse" message="tns:modificarSiniestrosSOATResponse" />
+    </operation>
+    <operation name="reporteSiniestrosSOAT">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/reporteSiniestrosSOATRequest" message="tns:reporteSiniestrosSOAT" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/reporteSiniestrosSOATResponse" message="tns:reporteSiniestrosSOATResponse" />
+    </operation>
+    <operation name="eliminarSiniestrosSOAT">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/eliminarSiniestrosSOATRequest" message="tns:eliminarSiniestrosSOAT" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/eliminarSiniestrosSOATResponse" message="tns:eliminarSiniestrosSOATResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/eliminarSiniestrosSOAT/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/eliminarSiniestrosSOAT/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="listarTodosSiniestrosSOAT">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/listarTodosSiniestrosSOATRequest" message="tns:listarTodosSiniestrosSOAT" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/listarTodosSiniestrosSOATResponse" message="tns:listarTodosSiniestrosSOATResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/listarTodosSiniestrosSOAT/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/listarTodosSiniestrosSOAT/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="listarPorProcuradorSiniestrosSOAT">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/listarPorProcuradorSiniestrosSOATRequest" message="tns:listarPorProcuradorSiniestrosSOAT" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/listarPorProcuradorSiniestrosSOATResponse" message="tns:listarPorProcuradorSiniestrosSOATResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/listarPorProcuradorSiniestrosSOAT/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosSOAT/listarPorProcuradorSiniestrosSOAT/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+  </portType>
+  <binding name="SiniestrosSOATPortBinding" type="tns:SiniestrosSOAT">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="obtenerPorIdSiniestrosSOAT">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="insertarSiniestrosSOAT">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarSiniestrosSOAT">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="reporteSiniestrosSOAT">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarSiniestrosSOAT">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="listarTodosSiniestrosSOAT">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="listarPorProcuradorSiniestrosSOAT">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="SiniestrosSOAT">
+    <port name="SiniestrosSOATPort" binding="tns:SiniestrosSOATPortBinding">
+      <soap:address location="http://localhost:8080/SoftAsegWS/SiniestrosSOAT" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9987FCF4-9F25-4078-814C-8D8F8AD07490}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiniNetBusiness</RootNamespace>
+    <AssemblyName>SiniNetBusiness</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministradorBO.cs" />
+    <Compile Include="CentroDeSaludBO.cs" />
+    <Compile Include="Connected Services\SiniNetWSAdministradores\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SiniNetWSCentrosDeSalud\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SiniNetWSEmpleados\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SiniNetWSImagenesSiniestros\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SiniNetWSInvolucrados\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SiniNetWSPersonas\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SiniNetWSPolizasSOAT\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SiniNetWSPolizasVehiculares\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SiniNetWSSiniestrosSOAT\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SiniNetWSSiniestrosVehiculares\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SiniNetWSSiniestros\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SiniNetWSTalleres\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SiniNetWSVehiculos\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoBO.cs" />
+    <Compile Include="ImagenSiniestro.cs" />
+    <Compile Include="InvolucradoBO.cs" />
+    <Compile Include="PersonaBO.cs" />
+    <Compile Include="PolizaSOATBO.cs" />
+    <Compile Include="PolizaVehicularBO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiniestroBO.cs" />
+    <Compile Include="SiniestroSOATBO.cs" />
+    <Compile Include="SiniestroVehicularBO.cs" />
+    <Compile Include="TallerBO.cs" />
+    <Compile Include="VehiculoBO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Connected Services\SiniNetWSAdministradores\Administradores.wsdl" />
+    <None Include="Connected Services\SiniNetWSAdministradores\Administradores.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SiniNetWSAdministradores\SiniNetBusiness.SiniNetWSAdministradores.administradoresDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSAdministradores\SiniNetBusiness.SiniNetWSAdministradores.eliminarAdministradoresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSAdministradores\SiniNetBusiness.SiniNetWSAdministradores.insertarAdministradoresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSAdministradores\SiniNetBusiness.SiniNetWSAdministradores.listarTodosAdministradoresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSAdministradores\SiniNetBusiness.SiniNetWSAdministradores.modificarAdministradoresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSAdministradores\SiniNetBusiness.SiniNetWSAdministradores.obtenerPorIdAdministradoresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSCentrosDeSalud\CentrosDeSalud.wsdl" />
+    <None Include="Connected Services\SiniNetWSCentrosDeSalud\CentrosDeSalud.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SiniNetWSCentrosDeSalud\SiniNetBusiness.SiniNetWSCentrosDeSalud.centrosDeSaludDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSCentrosDeSalud\SiniNetBusiness.SiniNetWSCentrosDeSalud.eliminarCentrosDeSaludResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSCentrosDeSalud\SiniNetBusiness.SiniNetWSCentrosDeSalud.insertarCentrosDeSaludResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSCentrosDeSalud\SiniNetBusiness.SiniNetWSCentrosDeSalud.listarPorNombreCodigoRENIPRESSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSCentrosDeSalud\SiniNetBusiness.SiniNetWSCentrosDeSalud.listarTodosCentrosDeSaludResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSCentrosDeSalud\SiniNetBusiness.SiniNetWSCentrosDeSalud.modificarCentrosDeSaludResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSCentrosDeSalud\SiniNetBusiness.SiniNetWSCentrosDeSalud.obtenerPorIdCentrosDeSaludResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSEmpleados\Empleados.wsdl" />
+    <None Include="Connected Services\SiniNetWSEmpleados\Empleados.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SiniNetWSEmpleados\SiniNetBusiness.SiniNetWSEmpleados.eliminarEmpleadosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSEmpleados\SiniNetBusiness.SiniNetWSEmpleados.empleadosDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSEmpleados\SiniNetBusiness.SiniNetWSEmpleados.insertarEmpleadosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSEmpleados\SiniNetBusiness.SiniNetWSEmpleados.listarPorNombreApellidoPaternoTipoEmpleadosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSEmpleados\SiniNetBusiness.SiniNetWSEmpleados.listarProcuradoresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSEmpleados\SiniNetBusiness.SiniNetWSEmpleados.listarTodosEmpleadosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSEmpleados\SiniNetBusiness.SiniNetWSEmpleados.modificarEmpleadosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSEmpleados\SiniNetBusiness.SiniNetWSEmpleados.obtenerPorIdEmpleadosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSEmpleados\SiniNetBusiness.SiniNetWSEmpleados.reporteCalificacionProcuradorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSImagenesSiniestros\ImagenesSiniestros.wsdl" />
+    <None Include="Connected Services\SiniNetWSImagenesSiniestros\ImagenesSiniestros.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SiniNetWSImagenesSiniestros\SiniNetBusiness.SiniNetWSImagenesSiniestros.eliminarImagenSiniestroResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSImagenesSiniestros\SiniNetBusiness.SiniNetWSImagenesSiniestros.imagenSiniestroDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSImagenesSiniestros\SiniNetBusiness.SiniNetWSImagenesSiniestros.listarImagenesPorSiniestroResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSImagenesSiniestros\SiniNetBusiness.SiniNetWSImagenesSiniestros.subirImagenSiniestroResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSInvolucrados\Involucrados.wsdl" />
+    <None Include="Connected Services\SiniNetWSInvolucrados\Involucrados.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SiniNetWSInvolucrados\SiniNetBusiness.SiniNetWSInvolucrados.eliminarInvolucradosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSInvolucrados\SiniNetBusiness.SiniNetWSInvolucrados.insertarInvolucradosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSInvolucrados\SiniNetBusiness.SiniNetWSInvolucrados.involucradosDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSInvolucrados\SiniNetBusiness.SiniNetWSInvolucrados.listarPorNombreApellidoPaternoInvolucradosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSInvolucrados\SiniNetBusiness.SiniNetWSInvolucrados.listarTodosAseguradosInvolucradosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSInvolucrados\SiniNetBusiness.SiniNetWSInvolucrados.listarTodosInvolucradosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSInvolucrados\SiniNetBusiness.SiniNetWSInvolucrados.modificarInvolucradosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSInvolucrados\SiniNetBusiness.SiniNetWSInvolucrados.obtenerPorIdInvolucradosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPersonas\Personas.wsdl" />
+    <None Include="Connected Services\SiniNetWSPersonas\Personas.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SiniNetWSPersonas\SiniNetBusiness.SiniNetWSPersonas.eliminarPersonasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPersonas\SiniNetBusiness.SiniNetWSPersonas.insertarPersonasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPersonas\SiniNetBusiness.SiniNetWSPersonas.listarAseguradosPorSiniestroResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPersonas\SiniNetBusiness.SiniNetWSPersonas.listarPorNombresApellidosDniPersonaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPersonas\SiniNetBusiness.SiniNetWSPersonas.listarTodosPersonasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPersonas\SiniNetBusiness.SiniNetWSPersonas.modificarPersonasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPersonas\SiniNetBusiness.SiniNetWSPersonas.obtenerPorIdPersonasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPersonas\SiniNetBusiness.SiniNetWSPersonas.personasDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPolizasSOAT\PolizasSOAT.wsdl" />
+    <None Include="Connected Services\SiniNetWSPolizasSOAT\PolizasSOAT.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SiniNetWSPolizasSOAT\SiniNetBusiness.SiniNetWSPolizasSOAT.eliminarPolizasSOATResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPolizasSOAT\SiniNetBusiness.SiniNetWSPolizasSOAT.insertarPolizasSOATResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPolizasSOAT\SiniNetBusiness.SiniNetWSPolizasSOAT.listarPorNombreApellidoAseguradoPolizasSOATResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPolizasSOAT\SiniNetBusiness.SiniNetWSPolizasSOAT.listarTodosPolizasSOATResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPolizasSOAT\SiniNetBusiness.SiniNetWSPolizasSOAT.modificarPolizasSOATResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPolizasSOAT\SiniNetBusiness.SiniNetWSPolizasSOAT.obtenerPorIdPolizasSOATResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPolizasSOAT\SiniNetBusiness.SiniNetWSPolizasSOAT.polizasSOATDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPolizasVehiculares\PolizasVehiculares.wsdl" />
+    <None Include="Connected Services\SiniNetWSPolizasVehiculares\PolizasVehiculares.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SiniNetWSPolizasVehiculares\SiniNetBusiness.SiniNetWSPolizasVehiculares.eliminarPolizasVehicularesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPolizasVehiculares\SiniNetBusiness.SiniNetWSPolizasVehiculares.insertarPolizasVehicularesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPolizasVehiculares\SiniNetBusiness.SiniNetWSPolizasVehiculares.listarPorNombreApellidoAseguradoPolizasVehicularesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPolizasVehiculares\SiniNetBusiness.SiniNetWSPolizasVehiculares.listarTodosPolizasVehicularesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPolizasVehiculares\SiniNetBusiness.SiniNetWSPolizasVehiculares.modificarPolizasVehicularesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPolizasVehiculares\SiniNetBusiness.SiniNetWSPolizasVehiculares.obtenerPorIdPolizasVehicularesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSPolizasVehiculares\SiniNetBusiness.SiniNetWSPolizasVehiculares.polizasVehicularesDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosSOAT\SiniestrosSOAT.wsdl" />
+    <None Include="Connected Services\SiniNetWSSiniestrosSOAT\SiniestrosSOAT.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosSOAT\SiniNetBusiness.SiniNetWSSiniestrosSOAT.eliminarSiniestrosSOATResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosSOAT\SiniNetBusiness.SiniNetWSSiniestrosSOAT.insertarSiniestrosSOATResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosSOAT\SiniNetBusiness.SiniNetWSSiniestrosSOAT.listarPorProcuradorSiniestrosSOATResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosSOAT\SiniNetBusiness.SiniNetWSSiniestrosSOAT.listarTodosSiniestrosSOATResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosSOAT\SiniNetBusiness.SiniNetWSSiniestrosSOAT.modificarSiniestrosSOATResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosSOAT\SiniNetBusiness.SiniNetWSSiniestrosSOAT.obtenerPorIdSiniestrosSOATResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosSOAT\SiniNetBusiness.SiniNetWSSiniestrosSOAT.reporteSiniestrosSOATResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosSOAT\SiniNetBusiness.SiniNetWSSiniestrosSOAT.siniestrosSOATDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosVehiculares\SiniestrosVehiculares.wsdl" />
+    <None Include="Connected Services\SiniNetWSSiniestrosVehiculares\SiniestrosVehiculares.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosVehiculares\SiniNetBusiness.SiniNetWSSiniestrosVehiculares.eliminarSiniestrosVehicularesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosVehiculares\SiniNetBusiness.SiniNetWSSiniestrosVehiculares.insertarSiniestrosVehicularesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosVehiculares\SiniNetBusiness.SiniNetWSSiniestrosVehiculares.listarPorProcuradorSiniestrosVehicularesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosVehiculares\SiniNetBusiness.SiniNetWSSiniestrosVehiculares.listarTodosSiniestrosVehicularesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosVehiculares\SiniNetBusiness.SiniNetWSSiniestrosVehiculares.modificarSiniestrosVehicularesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosVehiculares\SiniNetBusiness.SiniNetWSSiniestrosVehiculares.obtenerPorIdSiniestrosVehicularesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosVehiculares\SiniNetBusiness.SiniNetWSSiniestrosVehiculares.reporteSiniestrosVehicularesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestrosVehiculares\SiniNetBusiness.SiniNetWSSiniestrosVehiculares.siniestrosVehicularesDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestros\Siniestros.wsdl" />
+    <None Include="Connected Services\SiniNetWSSiniestros\Siniestros.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestros\SiniNetBusiness.SiniNetWSSiniestros.listarPorEmpleadoSiniestrosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestros\SiniNetBusiness.SiniNetWSSiniestros.listarTodosSiniestrosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestros\SiniNetBusiness.SiniNetWSSiniestros.obtenerPorIdSiniestrosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSSiniestros\SiniNetBusiness.SiniNetWSSiniestros.siniestrosDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSTalleres\SiniNetBusiness.SiniNetWSTalleres.eliminarTalleresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSTalleres\SiniNetBusiness.SiniNetWSTalleres.insertarTalleresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSTalleres\SiniNetBusiness.SiniNetWSTalleres.listarPorNombreTalleresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSTalleres\SiniNetBusiness.SiniNetWSTalleres.listarTodosTalleresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSTalleres\SiniNetBusiness.SiniNetWSTalleres.modificarTalleresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSTalleres\SiniNetBusiness.SiniNetWSTalleres.obtenerPorIdTalleresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSTalleres\SiniNetBusiness.SiniNetWSTalleres.talleresDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSTalleres\Talleres.wsdl" />
+    <None Include="Connected Services\SiniNetWSTalleres\Talleres.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SiniNetWSVehiculos\SiniNetBusiness.SiniNetWSVehiculos.eliminarVehiculosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSVehiculos\SiniNetBusiness.SiniNetWSVehiculos.insertarVehiculosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSVehiculos\SiniNetBusiness.SiniNetWSVehiculos.listarPorPlacaMarcaModeloTipoVehiculoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSVehiculos\SiniNetBusiness.SiniNetWSVehiculos.listarTodosVehiculosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSVehiculos\SiniNetBusiness.SiniNetWSVehiculos.modificarVehiculosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSVehiculos\SiniNetBusiness.SiniNetWSVehiculos.obtenerPorIdVehiculosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSVehiculos\SiniNetBusiness.SiniNetWSVehiculos.vehiculosDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SiniNetWSVehiculos\Vehiculos.wsdl" />
+    <None Include="Connected Services\SiniNetWSVehiculos\Vehiculos.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\SiniNetWSAdministradores\" />
+    <WCFMetadataStorage Include="Connected Services\SiniNetWSCentrosDeSalud\" />
+    <WCFMetadataStorage Include="Connected Services\SiniNetWSEmpleados\" />
+    <WCFMetadataStorage Include="Connected Services\SiniNetWSImagenesSiniestros\" />
+    <WCFMetadataStorage Include="Connected Services\SiniNetWSInvolucrados\" />
+    <WCFMetadataStorage Include="Connected Services\SiniNetWSPersonas\" />
+    <WCFMetadataStorage Include="Connected Services\SiniNetWSPolizasSOAT\" />
+    <WCFMetadataStorage Include="Connected Services\SiniNetWSPolizasVehiculares\" />
+    <WCFMetadataStorage Include="Connected Services\SiniNetWSSiniestrosSOAT\" />
+    <WCFMetadataStorage Include="Connected Services\SiniNetWSSiniestrosVehiculares\" />
+    <WCFMetadataStorage Include="Connected Services\SiniNetWSSiniestros\" />
+    <WCFMetadataStorage Include="Connected Services\SiniNetWSTalleres\" />
+    <WCFMetadataStorage Include="Connected Services\SiniNetWSVehiculos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSAdministradores\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSAdministradores\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSAdministradores\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSCentrosDeSalud\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSCentrosDeSalud\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSCentrosDeSalud\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSEmpleados\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSEmpleados\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSEmpleados\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSPersonas\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSPersonas\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSPersonas\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSPolizasSOAT\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSPolizasSOAT\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSPolizasSOAT\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSPolizasVehiculares\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSPolizasVehiculares\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSPolizasVehiculares\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSSiniestros\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSSiniestros\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSSiniestros\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSSiniestrosSOAT\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSSiniestrosSOAT\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSSiniestrosSOAT\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSSiniestrosVehiculares\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSSiniestrosVehiculares\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSSiniestrosVehiculares\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSTalleres\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSTalleres\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSTalleres\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSVehiculos\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSVehiculos\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSVehiculos\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSImagenesSiniestros\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSImagenesSiniestros\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSImagenesSiniestros\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSInvolucrados\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSInvolucrados\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SiniNetWSInvolucrados\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

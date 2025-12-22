@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="SiniestrosVehiculares" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftAsegWS/SiniestrosVehiculares?xsd=1" namespace="http://softasegws.services.softaseg.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="reporteSiniestrosVehiculares">
+    <part name="parameters" element="tns:reporteSiniestrosVehiculares" />
+  </message>
+  <message name="reporteSiniestrosVehicularesResponse">
+    <part name="parameters" element="tns:reporteSiniestrosVehicularesResponse" />
+  </message>
+  <message name="listarPorProcuradorSiniestrosVehiculares">
+    <part name="parameters" element="tns:listarPorProcuradorSiniestrosVehiculares" />
+  </message>
+  <message name="listarPorProcuradorSiniestrosVehicularesResponse">
+    <part name="parameters" element="tns:listarPorProcuradorSiniestrosVehicularesResponse" />
+  </message>
+  <message name="IOException">
+    <part name="fault" element="tns:IOException" />
+  </message>
+  <message name="InterruptedException">
+    <part name="fault" element="tns:InterruptedException" />
+  </message>
+  <message name="insertarSiniestrosVehiculares">
+    <part name="parameters" element="tns:insertarSiniestrosVehiculares" />
+  </message>
+  <message name="insertarSiniestrosVehicularesResponse">
+    <part name="parameters" element="tns:insertarSiniestrosVehicularesResponse" />
+  </message>
+  <message name="modificarSiniestrosVehiculares">
+    <part name="parameters" element="tns:modificarSiniestrosVehiculares" />
+  </message>
+  <message name="modificarSiniestrosVehicularesResponse">
+    <part name="parameters" element="tns:modificarSiniestrosVehicularesResponse" />
+  </message>
+  <message name="listarTodosSiniestrosVehiculares">
+    <part name="parameters" element="tns:listarTodosSiniestrosVehiculares" />
+  </message>
+  <message name="listarTodosSiniestrosVehicularesResponse">
+    <part name="parameters" element="tns:listarTodosSiniestrosVehicularesResponse" />
+  </message>
+  <message name="obtenerPorIdSiniestrosVehiculares">
+    <part name="parameters" element="tns:obtenerPorIdSiniestrosVehiculares" />
+  </message>
+  <message name="obtenerPorIdSiniestrosVehicularesResponse">
+    <part name="parameters" element="tns:obtenerPorIdSiniestrosVehicularesResponse" />
+  </message>
+  <message name="eliminarSiniestrosVehiculares">
+    <part name="parameters" element="tns:eliminarSiniestrosVehiculares" />
+  </message>
+  <message name="eliminarSiniestrosVehicularesResponse">
+    <part name="parameters" element="tns:eliminarSiniestrosVehicularesResponse" />
+  </message>
+  <portType name="SiniestrosVehiculares">
+    <operation name="reporteSiniestrosVehiculares">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/reporteSiniestrosVehicularesRequest" message="tns:reporteSiniestrosVehiculares" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/reporteSiniestrosVehicularesResponse" message="tns:reporteSiniestrosVehicularesResponse" />
+    </operation>
+    <operation name="listarPorProcuradorSiniestrosVehiculares">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/listarPorProcuradorSiniestrosVehicularesRequest" message="tns:listarPorProcuradorSiniestrosVehiculares" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/listarPorProcuradorSiniestrosVehicularesResponse" message="tns:listarPorProcuradorSiniestrosVehicularesResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/listarPorProcuradorSiniestrosVehiculares/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/listarPorProcuradorSiniestrosVehiculares/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="insertarSiniestrosVehiculares">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/insertarSiniestrosVehicularesRequest" message="tns:insertarSiniestrosVehiculares" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/insertarSiniestrosVehicularesResponse" message="tns:insertarSiniestrosVehicularesResponse" />
+    </operation>
+    <operation name="modificarSiniestrosVehiculares">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/modificarSiniestrosVehicularesRequest" message="tns:modificarSiniestrosVehiculares" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/modificarSiniestrosVehicularesResponse" message="tns:modificarSiniestrosVehicularesResponse" />
+    </operation>
+    <operation name="listarTodosSiniestrosVehiculares">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/listarTodosSiniestrosVehicularesRequest" message="tns:listarTodosSiniestrosVehiculares" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/listarTodosSiniestrosVehicularesResponse" message="tns:listarTodosSiniestrosVehicularesResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/listarTodosSiniestrosVehiculares/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/listarTodosSiniestrosVehiculares/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="obtenerPorIdSiniestrosVehiculares">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/obtenerPorIdSiniestrosVehicularesRequest" message="tns:obtenerPorIdSiniestrosVehiculares" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/obtenerPorIdSiniestrosVehicularesResponse" message="tns:obtenerPorIdSiniestrosVehicularesResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/obtenerPorIdSiniestrosVehiculares/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/obtenerPorIdSiniestrosVehiculares/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="eliminarSiniestrosVehiculares">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/eliminarSiniestrosVehicularesRequest" message="tns:eliminarSiniestrosVehiculares" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/eliminarSiniestrosVehicularesResponse" message="tns:eliminarSiniestrosVehicularesResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/eliminarSiniestrosVehiculares/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/SiniestrosVehiculares/eliminarSiniestrosVehiculares/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+  </portType>
+  <binding name="SiniestrosVehicularesPortBinding" type="tns:SiniestrosVehiculares">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="reporteSiniestrosVehiculares">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPorProcuradorSiniestrosVehiculares">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="insertarSiniestrosVehiculares">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarSiniestrosVehiculares">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosSiniestrosVehiculares">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="obtenerPorIdSiniestrosVehiculares">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="eliminarSiniestrosVehiculares">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="SiniestrosVehiculares">
+    <port name="SiniestrosVehicularesPort" binding="tns:SiniestrosVehicularesPortBinding">
+      <soap:address location="http://localhost:8080/SoftAsegWS/SiniestrosVehiculares" />
+    </port>
+  </service>
+</definitions>

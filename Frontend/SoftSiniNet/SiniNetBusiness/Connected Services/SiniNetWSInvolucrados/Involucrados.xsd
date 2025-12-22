@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="IOException" type="tns:IOException" />
+  <xs:element name="InterruptedException" type="tns:InterruptedException" />
+  <xs:element name="eliminarInvolucrados" type="tns:eliminarInvolucrados" />
+  <xs:element name="eliminarInvolucradosResponse" type="tns:eliminarInvolucradosResponse" />
+  <xs:element name="insertarInvolucrados" type="tns:insertarInvolucrados" />
+  <xs:element name="insertarInvolucradosResponse" type="tns:insertarInvolucradosResponse" />
+  <xs:element name="listarPorNombreApellidoPaternoInvolucrados" type="tns:listarPorNombreApellidoPaternoInvolucrados" />
+  <xs:element name="listarPorNombreApellidoPaternoInvolucradosResponse" type="tns:listarPorNombreApellidoPaternoInvolucradosResponse" />
+  <xs:element name="listarTodosAseguradosInvolucrados" type="tns:listarTodosAseguradosInvolucrados" />
+  <xs:element name="listarTodosAseguradosInvolucradosResponse" type="tns:listarTodosAseguradosInvolucradosResponse" />
+  <xs:element name="listarTodosInvolucrados" type="tns:listarTodosInvolucrados" />
+  <xs:element name="listarTodosInvolucradosResponse" type="tns:listarTodosInvolucradosResponse" />
+  <xs:element name="modificarInvolucrados" type="tns:modificarInvolucrados" />
+  <xs:element name="modificarInvolucradosResponse" type="tns:modificarInvolucradosResponse" />
+  <xs:element name="obtenerPorIdInvolucrados" type="tns:obtenerPorIdInvolucrados" />
+  <xs:element name="obtenerPorIdInvolucradosResponse" type="tns:obtenerPorIdInvolucradosResponse" />
+  <xs:complexType name="obtenerPorIdInvolucrados">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="empleadoId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdInvolucradosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:involucradosDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="involucradosDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:personasDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="tipo" type="tns:tipoInvolucrado" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="personasDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="personalId" type="xs:int" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IOException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InterruptedException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarInvolucrados">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="involucradoId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarInvolucradosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarInvolucrados">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="personalId" type="xs:int" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo" type="tns:tipoInvolucrado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarInvolucradosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorNombreApellidoPaternoInvolucrados">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="filtro" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorNombreApellidoPaternoInvolucradosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:involucradosDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosInvolucrados">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosInvolucradosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:involucradosDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarInvolucrados">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo" type="tns:tipoInvolucrado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarInvolucradosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosAseguradosInvolucrados">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosAseguradosInvolucradosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:involucradosDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="tipoInvolucrado">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CONDUCTOR" />
+      <xs:enumeration value="ASEGURADO" />
+      <xs:enumeration value="AFECTADO" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

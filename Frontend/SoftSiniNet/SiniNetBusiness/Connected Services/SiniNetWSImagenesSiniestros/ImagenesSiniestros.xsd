@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarImagenSiniestro" type="tns:eliminarImagenSiniestro" />
+  <xs:element name="eliminarImagenSiniestroResponse" type="tns:eliminarImagenSiniestroResponse" />
+  <xs:element name="listarImagenesPorSiniestro" type="tns:listarImagenesPorSiniestro" />
+  <xs:element name="listarImagenesPorSiniestroResponse" type="tns:listarImagenesPorSiniestroResponse" />
+  <xs:element name="subirImagenSiniestro" type="tns:subirImagenSiniestro" />
+  <xs:element name="subirImagenSiniestroResponse" type="tns:subirImagenSiniestroResponse" />
+  <xs:complexType name="listarImagenesPorSiniestro">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="siniestroId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarImagenesPorSiniestroResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:imagenSiniestroDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="imagenSiniestroDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fechaSubida" type="xs:string" />
+      <xs:element minOccurs="0" name="imagenId" type="xs:int" />
+      <xs:element minOccurs="0" name="nombreArchivo" type="xs:string" />
+      <xs:element minOccurs="0" name="siniestroId" type="xs:int" />
+      <xs:element minOccurs="0" name="url" type="xs:string" />
+      <xs:element minOccurs="0" name="validez" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="subirImagenSiniestro">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="siniestroId" type="xs:int" />
+      <xs:element minOccurs="0" name="nombreArchivo" type="xs:string" />
+      <xs:element minOccurs="0" name="contenidoBase64" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="subirImagenSiniestroResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarImagenSiniestro">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="imagenId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarImagenSiniestroResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

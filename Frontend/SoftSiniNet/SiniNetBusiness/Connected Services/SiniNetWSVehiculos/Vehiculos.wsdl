@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Vehiculos" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftAsegWS/Vehiculos?xsd=1" namespace="http://softasegws.services.softaseg.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="modificarVehiculos">
+    <part name="parameters" element="tns:modificarVehiculos" />
+  </message>
+  <message name="modificarVehiculosResponse">
+    <part name="parameters" element="tns:modificarVehiculosResponse" />
+  </message>
+  <message name="obtenerPorIdVehiculos">
+    <part name="parameters" element="tns:obtenerPorIdVehiculos" />
+  </message>
+  <message name="obtenerPorIdVehiculosResponse">
+    <part name="parameters" element="tns:obtenerPorIdVehiculosResponse" />
+  </message>
+  <message name="IOException">
+    <part name="fault" element="tns:IOException" />
+  </message>
+  <message name="InterruptedException">
+    <part name="fault" element="tns:InterruptedException" />
+  </message>
+  <message name="eliminarVehiculos">
+    <part name="parameters" element="tns:eliminarVehiculos" />
+  </message>
+  <message name="eliminarVehiculosResponse">
+    <part name="parameters" element="tns:eliminarVehiculosResponse" />
+  </message>
+  <message name="insertarVehiculos">
+    <part name="parameters" element="tns:insertarVehiculos" />
+  </message>
+  <message name="insertarVehiculosResponse">
+    <part name="parameters" element="tns:insertarVehiculosResponse" />
+  </message>
+  <message name="listarTodosVehiculos">
+    <part name="parameters" element="tns:listarTodosVehiculos" />
+  </message>
+  <message name="listarTodosVehiculosResponse">
+    <part name="parameters" element="tns:listarTodosVehiculosResponse" />
+  </message>
+  <message name="listarPorPlacaMarcaModeloTipoVehiculo">
+    <part name="parameters" element="tns:listarPorPlacaMarcaModeloTipoVehiculo" />
+  </message>
+  <message name="listarPorPlacaMarcaModeloTipoVehiculoResponse">
+    <part name="parameters" element="tns:listarPorPlacaMarcaModeloTipoVehiculoResponse" />
+  </message>
+  <portType name="Vehiculos">
+    <operation name="modificarVehiculos">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/modificarVehiculosRequest" message="tns:modificarVehiculos" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/modificarVehiculosResponse" message="tns:modificarVehiculosResponse" />
+    </operation>
+    <operation name="obtenerPorIdVehiculos">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/obtenerPorIdVehiculosRequest" message="tns:obtenerPorIdVehiculos" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/obtenerPorIdVehiculosResponse" message="tns:obtenerPorIdVehiculosResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/obtenerPorIdVehiculos/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/obtenerPorIdVehiculos/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="eliminarVehiculos">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/eliminarVehiculosRequest" message="tns:eliminarVehiculos" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/eliminarVehiculosResponse" message="tns:eliminarVehiculosResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/eliminarVehiculos/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/eliminarVehiculos/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="insertarVehiculos">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/insertarVehiculosRequest" message="tns:insertarVehiculos" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/insertarVehiculosResponse" message="tns:insertarVehiculosResponse" />
+    </operation>
+    <operation name="listarTodosVehiculos">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/listarTodosVehiculosRequest" message="tns:listarTodosVehiculos" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/listarTodosVehiculosResponse" message="tns:listarTodosVehiculosResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/listarTodosVehiculos/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/listarTodosVehiculos/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="listarPorPlacaMarcaModeloTipoVehiculo">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/listarPorPlacaMarcaModeloTipoVehiculoRequest" message="tns:listarPorPlacaMarcaModeloTipoVehiculo" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/listarPorPlacaMarcaModeloTipoVehiculoResponse" message="tns:listarPorPlacaMarcaModeloTipoVehiculoResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/listarPorPlacaMarcaModeloTipoVehiculo/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Vehiculos/listarPorPlacaMarcaModeloTipoVehiculo/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+  </portType>
+  <binding name="VehiculosPortBinding" type="tns:Vehiculos">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="modificarVehiculos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdVehiculos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="eliminarVehiculos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="insertarVehiculos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosVehiculos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="listarPorPlacaMarcaModeloTipoVehiculo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="Vehiculos">
+    <port name="VehiculosPort" binding="tns:VehiculosPortBinding">
+      <soap:address location="http://localhost:8080/SoftAsegWS/Vehiculos" />
+    </port>
+  </service>
+</definitions>

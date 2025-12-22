@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="PolizasVehiculares" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftAsegWS/PolizasVehiculares?xsd=1" namespace="http://softasegws.services.softaseg.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="insertarPolizasVehiculares">
+    <part name="parameters" element="tns:insertarPolizasVehiculares" />
+  </message>
+  <message name="insertarPolizasVehicularesResponse">
+    <part name="parameters" element="tns:insertarPolizasVehicularesResponse" />
+  </message>
+  <message name="eliminarPolizasVehiculares">
+    <part name="parameters" element="tns:eliminarPolizasVehiculares" />
+  </message>
+  <message name="eliminarPolizasVehicularesResponse">
+    <part name="parameters" element="tns:eliminarPolizasVehicularesResponse" />
+  </message>
+  <message name="IOException">
+    <part name="fault" element="tns:IOException" />
+  </message>
+  <message name="InterruptedException">
+    <part name="fault" element="tns:InterruptedException" />
+  </message>
+  <message name="obtenerPorIdPolizasVehiculares">
+    <part name="parameters" element="tns:obtenerPorIdPolizasVehiculares" />
+  </message>
+  <message name="obtenerPorIdPolizasVehicularesResponse">
+    <part name="parameters" element="tns:obtenerPorIdPolizasVehicularesResponse" />
+  </message>
+  <message name="listarTodosPolizasVehiculares">
+    <part name="parameters" element="tns:listarTodosPolizasVehiculares" />
+  </message>
+  <message name="listarTodosPolizasVehicularesResponse">
+    <part name="parameters" element="tns:listarTodosPolizasVehicularesResponse" />
+  </message>
+  <message name="modificarPolizasVehiculares">
+    <part name="parameters" element="tns:modificarPolizasVehiculares" />
+  </message>
+  <message name="modificarPolizasVehicularesResponse">
+    <part name="parameters" element="tns:modificarPolizasVehicularesResponse" />
+  </message>
+  <message name="listarPorNombreApellidoAseguradoPolizasVehiculares">
+    <part name="parameters" element="tns:listarPorNombreApellidoAseguradoPolizasVehiculares" />
+  </message>
+  <message name="listarPorNombreApellidoAseguradoPolizasVehicularesResponse">
+    <part name="parameters" element="tns:listarPorNombreApellidoAseguradoPolizasVehicularesResponse" />
+  </message>
+  <portType name="PolizasVehiculares">
+    <operation name="insertarPolizasVehiculares">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/insertarPolizasVehicularesRequest" message="tns:insertarPolizasVehiculares" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/insertarPolizasVehicularesResponse" message="tns:insertarPolizasVehicularesResponse" />
+    </operation>
+    <operation name="eliminarPolizasVehiculares">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/eliminarPolizasVehicularesRequest" message="tns:eliminarPolizasVehiculares" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/eliminarPolizasVehicularesResponse" message="tns:eliminarPolizasVehicularesResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/eliminarPolizasVehiculares/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/eliminarPolizasVehiculares/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="obtenerPorIdPolizasVehiculares">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/obtenerPorIdPolizasVehicularesRequest" message="tns:obtenerPorIdPolizasVehiculares" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/obtenerPorIdPolizasVehicularesResponse" message="tns:obtenerPorIdPolizasVehicularesResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/obtenerPorIdPolizasVehiculares/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/obtenerPorIdPolizasVehiculares/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="listarTodosPolizasVehiculares">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/listarTodosPolizasVehicularesRequest" message="tns:listarTodosPolizasVehiculares" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/listarTodosPolizasVehicularesResponse" message="tns:listarTodosPolizasVehicularesResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/listarTodosPolizasVehiculares/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/listarTodosPolizasVehiculares/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="modificarPolizasVehiculares">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/modificarPolizasVehicularesRequest" message="tns:modificarPolizasVehiculares" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/modificarPolizasVehicularesResponse" message="tns:modificarPolizasVehicularesResponse" />
+    </operation>
+    <operation name="listarPorNombreApellidoAseguradoPolizasVehiculares">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/listarPorNombreApellidoAseguradoPolizasVehicularesRequest" message="tns:listarPorNombreApellidoAseguradoPolizasVehiculares" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/listarPorNombreApellidoAseguradoPolizasVehicularesResponse" message="tns:listarPorNombreApellidoAseguradoPolizasVehicularesResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/listarPorNombreApellidoAseguradoPolizasVehiculares/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasVehiculares/listarPorNombreApellidoAseguradoPolizasVehiculares/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+  </portType>
+  <binding name="PolizasVehicularesPortBinding" type="tns:PolizasVehiculares">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="insertarPolizasVehiculares">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarPolizasVehiculares">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="obtenerPorIdPolizasVehiculares">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="listarTodosPolizasVehiculares">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="modificarPolizasVehiculares">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPorNombreApellidoAseguradoPolizasVehiculares">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="PolizasVehiculares">
+    <port name="PolizasVehicularesPort" binding="tns:PolizasVehicularesPortBinding">
+      <soap:address location="http://localhost:8080/SoftAsegWS/PolizasVehiculares" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,400 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F1525FA-31B6-427C-B0C2-C10A8F54EEC1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiniNetWA</RootNamespace>
+    <AssemblyName>SiniNetWA</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aseguradosAdmin_gestion.aspx" />
+    <Content Include="aseguradosAdmin_listado.aspx" />
+    <Content Include="centrosSaludAdmin_gestion.aspx" />
+    <Content Include="centrosSaludAdmin_listado.aspx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Fonts\css\all.css" />
+    <Content Include="Content\Fonts\css\all.min.css" />
+    <Content Include="Content\Fonts\css\brands.css" />
+    <Content Include="Content\Fonts\css\brands.min.css" />
+    <Content Include="Content\Fonts\css\fontawesome.css" />
+    <Content Include="Content\Fonts\css\fontawesome.min.css" />
+    <Content Include="Content\Fonts\css\regular.css" />
+    <Content Include="Content\Fonts\css\regular.min.css" />
+    <Content Include="Content\Fonts\css\solid.css" />
+    <Content Include="Content\Fonts\css\solid.min.css" />
+    <Content Include="Content\Fonts\css\svg-with-js.css" />
+    <Content Include="Content\Fonts\css\svg-with-js.min.css" />
+    <Content Include="Content\Fonts\css\svg.css" />
+    <Content Include="Content\Fonts\css\svg.min.css" />
+    <Content Include="Content\Fonts\css\v4-font-face.css" />
+    <Content Include="Content\Fonts\css\v4-font-face.min.css" />
+    <Content Include="Content\Fonts\css\v4-shims.css" />
+    <Content Include="Content\Fonts\css\v4-shims.min.css" />
+    <Content Include="Content\Fonts\css\v5-font-face.css" />
+    <Content Include="Content\Fonts\css\v5-font-face.min.css" />
+    <Content Include="Content\sininet.css" />
+    <Content Include="empleadosAdmin_gestion.aspx" />
+    <Content Include="empleadosAdmin_listado.aspx" />
+    <Content Include="Images\LogoSiniNet.png" />
+    <Content Include="Images\pucp.png" />
+    <Content Include="index.aspx" />
+    <Content Include="llaveMaestra.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="polizasSoat_gestion.aspx" />
+    <Content Include="polizasSoat_listado.aspx" />
+    <Content Include="polizasVehiculares_gestion.aspx" />
+    <Content Include="polizaVehicular_listado.aspx" />
+    <Content Include="reportesAdmin.aspx" />
+    <Content Include="reportesOperario.aspx" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Fonts\webfonts\fa-brands-400.woff2" />
+    <Content Include="Content\Fonts\webfonts\fa-regular-400.woff2" />
+    <Content Include="Content\Fonts\webfonts\fa-solid-900.woff2" />
+    <Content Include="Content\Fonts\webfonts\fa-v4compatibility.woff2" />
+    <None Include="Scripts\jquery-3.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.7.1.js" />
+    <Content Include="Scripts\jquery-3.7.1.min.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
+    <Content Include="Scripts\SiniNetScripts\gestionar_modales_afectados.js" />
+    <Content Include="Scripts\SiniNetScripts\gestionar_modales_asegurados.js" />
+    <Content Include="Scripts\SiniNetScripts\gestionar_modales_empleados.js" />
+    <Content Include="Scripts\SiniNetScripts\gestionar_modales_mapas.js" />
+    <Content Include="Scripts\SiniNetScripts\gestionar_modales_personas.js" />
+    <Content Include="Scripts\SiniNetScripts\gestionar_modales_polizas.js" />
+    <Content Include="Scripts\SiniNetScripts\gestionar_modales_polizas_soat.js" />
+    <Content Include="Scripts\SiniNetScripts\gestionar_modales_polizas_vehiculares.js" />
+    <Content Include="Scripts\SiniNetScripts\gestionar_modales_siniestros.js" />
+    <Content Include="Scripts\SiniNetScripts\gestionar_modales_siniestros_soat.js" />
+    <Content Include="Scripts\SiniNetScripts\gestionar_modales_siniestros_vehicular.js" />
+    <Content Include="Scripts\SiniNetScripts\gestionar_modales_talleres.js" />
+    <Content Include="Scripts\SiniNetScripts\gestionar_modales_vehiculos.js" />
+    <Content Include="Scripts\SiniNetScripts\ver_mapa.js" />
+    <Content Include="SiniestrosSoatGestion.aspx" />
+    <Content Include="SiniestrosSoatListado.aspx" />
+    <Content Include="SiniestrosVehicularesGestion.aspx" />
+    <Content Include="siniestrosVehiculares_listado.aspx" />
+    <Content Include="talleresAdmin_gestion.aspx" />
+    <Content Include="talleresAdmin_listado.aspx" />
+    <Content Include="vehiculosAdmin_gestion.aspx" />
+    <Content Include="vehiculosAdmin_listado.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aseguradosAdmin_gestion.aspx.cs">
+      <DependentUpon>aseguradosAdmin_gestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aseguradosAdmin_gestion.aspx.designer.cs">
+      <DependentUpon>aseguradosAdmin_gestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aseguradosAdmin_listado.aspx.cs">
+      <DependentUpon>aseguradosAdmin_listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aseguradosAdmin_listado.aspx.designer.cs">
+      <DependentUpon>aseguradosAdmin_listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="centrosSaludAdmin_gestion.aspx.cs">
+      <DependentUpon>centrosSaludAdmin_gestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="centrosSaludAdmin_gestion.aspx.designer.cs">
+      <DependentUpon>centrosSaludAdmin_gestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="centrosSaludAdmin_listado.aspx.cs">
+      <DependentUpon>centrosSaludAdmin_listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="centrosSaludAdmin_listado.aspx.designer.cs">
+      <DependentUpon>centrosSaludAdmin_listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="empleadosAdmin_gestion.aspx.cs">
+      <DependentUpon>empleadosAdmin_gestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="empleadosAdmin_gestion.aspx.designer.cs">
+      <DependentUpon>empleadosAdmin_gestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="empleadosAdmin_listado.aspx.cs">
+      <DependentUpon>empleadosAdmin_listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="empleadosAdmin_listado.aspx.designer.cs">
+      <DependentUpon>empleadosAdmin_listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="llaveMaestra.aspx.cs">
+      <DependentUpon>llaveMaestra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="llaveMaestra.aspx.designer.cs">
+      <DependentUpon>llaveMaestra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="polizasSoat_gestion.aspx.cs">
+      <DependentUpon>polizasSoat_gestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="polizasSoat_gestion.aspx.designer.cs">
+      <DependentUpon>polizasSoat_gestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="polizasSoat_listado.aspx.cs">
+      <DependentUpon>polizasSoat_listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="polizasSoat_listado.aspx.designer.cs">
+      <DependentUpon>polizasSoat_listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="polizasVehiculares_gestion.aspx.cs">
+      <DependentUpon>polizasVehiculares_gestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="polizasVehiculares_gestion.aspx.designer.cs">
+      <DependentUpon>polizasVehiculares_gestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="polizaVehicular_listado.aspx.cs">
+      <DependentUpon>polizaVehicular_listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="polizaVehicular_listado.aspx.designer.cs">
+      <DependentUpon>polizaVehicular_listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reportesAdmin.aspx.cs">
+      <DependentUpon>reportesAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportesAdmin.aspx.designer.cs">
+      <DependentUpon>reportesAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportesOperario.aspx.cs">
+      <DependentUpon>reportesOperario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportesOperario.aspx.designer.cs">
+      <DependentUpon>reportesOperario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiniestrosSoatGestion.aspx.cs">
+      <DependentUpon>SiniestrosSoatGestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiniestrosSoatGestion.aspx.designer.cs">
+      <DependentUpon>SiniestrosSoatGestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiniestrosSoatListado.aspx.cs">
+      <DependentUpon>SiniestrosSoatListado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiniestrosSoatListado.aspx.designer.cs">
+      <DependentUpon>SiniestrosSoatListado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiniestrosVehicularesGestion.aspx.cs">
+      <DependentUpon>SiniestrosVehicularesGestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiniestrosVehicularesGestion.aspx.designer.cs">
+      <DependentUpon>SiniestrosVehicularesGestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="siniestrosVehiculares_listado.aspx.cs">
+      <DependentUpon>siniestrosVehiculares_listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="siniestrosVehiculares_listado.aspx.designer.cs">
+      <DependentUpon>siniestrosVehiculares_listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiniNet.Master.cs">
+      <DependentUpon>SiniNet.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiniNet.Master.designer.cs">
+      <DependentUpon>SiniNet.Master</DependentUpon>
+    </Compile>
+    <Compile Include="talleresAdmin_gestion.aspx.cs">
+      <DependentUpon>talleresAdmin_gestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="talleresAdmin_gestion.aspx.designer.cs">
+      <DependentUpon>talleresAdmin_gestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="talleresAdmin_listado.aspx.cs">
+      <DependentUpon>talleresAdmin_listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="talleresAdmin_listado.aspx.designer.cs">
+      <DependentUpon>talleresAdmin_listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vehiculosAdmin_gestion.aspx.cs">
+      <DependentUpon>vehiculosAdmin_gestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vehiculosAdmin_gestion.aspx.designer.cs">
+      <DependentUpon>vehiculosAdmin_gestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vehiculosAdmin_listado.aspx.cs">
+      <DependentUpon>vehiculosAdmin_listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vehiculosAdmin_listado.aspx.designer.cs">
+      <DependentUpon>vehiculosAdmin_listado.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.7.1.min.map" />
+    <Content Include="SiniNet.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SiniNetBusiness\SiniNetBusiness.csproj">
+      <Project>{9987fcf4-9f25-4078-814c-8d8f8ad07490}</Project>
+      <Name>SiniNetBusiness</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54167</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54321/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

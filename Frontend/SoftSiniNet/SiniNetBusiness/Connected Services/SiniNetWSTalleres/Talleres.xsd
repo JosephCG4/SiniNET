@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="IOException" type="tns:IOException" />
+  <xs:element name="InterruptedException" type="tns:InterruptedException" />
+  <xs:element name="eliminarTalleres" type="tns:eliminarTalleres" />
+  <xs:element name="eliminarTalleresResponse" type="tns:eliminarTalleresResponse" />
+  <xs:element name="insertarTalleres" type="tns:insertarTalleres" />
+  <xs:element name="insertarTalleresResponse" type="tns:insertarTalleresResponse" />
+  <xs:element name="listarPorNombreTalleres" type="tns:listarPorNombreTalleres" />
+  <xs:element name="listarPorNombreTalleresResponse" type="tns:listarPorNombreTalleresResponse" />
+  <xs:element name="listarTodosTalleres" type="tns:listarTodosTalleres" />
+  <xs:element name="listarTodosTalleresResponse" type="tns:listarTodosTalleresResponse" />
+  <xs:element name="modificarTalleres" type="tns:modificarTalleres" />
+  <xs:element name="modificarTalleresResponse" type="tns:modificarTalleresResponse" />
+  <xs:element name="obtenerPorIdTalleres" type="tns:obtenerPorIdTalleres" />
+  <xs:element name="obtenerPorIdTalleresResponse" type="tns:obtenerPorIdTalleresResponse" />
+  <xs:complexType name="insertarTalleres">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacion" type="tns:ubicacionesDTO" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ubicacionesDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="latitud" type="xs:double" />
+      <xs:element minOccurs="0" name="longitud" type="xs:double" />
+      <xs:element minOccurs="0" name="referencia" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacionId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarTalleresResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosTalleres">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosTalleresResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:talleresDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="talleresDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="tallerId" type="xs:int" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacion" type="tns:ubicacionesDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdTalleres">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="tallerId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdTalleresResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:talleresDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IOException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InterruptedException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarTalleres">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="tallerId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarTalleresResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorNombreTalleres">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorNombreTalleresResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:talleresDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarTalleres">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="tallerId" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacion" type="tns:ubicacionesDTO" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarTalleresResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

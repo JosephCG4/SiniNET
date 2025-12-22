@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Administradores" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftAsegWS/Administradores?xsd=1" namespace="http://softasegws.services.softaseg.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="eliminarAdministradores">
+    <part name="parameters" element="tns:eliminarAdministradores" />
+  </message>
+  <message name="eliminarAdministradoresResponse">
+    <part name="parameters" element="tns:eliminarAdministradoresResponse" />
+  </message>
+  <message name="IOException">
+    <part name="fault" element="tns:IOException" />
+  </message>
+  <message name="InterruptedException">
+    <part name="fault" element="tns:InterruptedException" />
+  </message>
+  <message name="listarTodosAdministradores">
+    <part name="parameters" element="tns:listarTodosAdministradores" />
+  </message>
+  <message name="listarTodosAdministradoresResponse">
+    <part name="parameters" element="tns:listarTodosAdministradoresResponse" />
+  </message>
+  <message name="modificarAdministradores">
+    <part name="parameters" element="tns:modificarAdministradores" />
+  </message>
+  <message name="modificarAdministradoresResponse">
+    <part name="parameters" element="tns:modificarAdministradoresResponse" />
+  </message>
+  <message name="insertarAdministradores">
+    <part name="parameters" element="tns:insertarAdministradores" />
+  </message>
+  <message name="insertarAdministradoresResponse">
+    <part name="parameters" element="tns:insertarAdministradoresResponse" />
+  </message>
+  <message name="obtenerPorIdAdministradores">
+    <part name="parameters" element="tns:obtenerPorIdAdministradores" />
+  </message>
+  <message name="obtenerPorIdAdministradoresResponse">
+    <part name="parameters" element="tns:obtenerPorIdAdministradoresResponse" />
+  </message>
+  <portType name="Administradores">
+    <operation name="eliminarAdministradores">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Administradores/eliminarAdministradoresRequest" message="tns:eliminarAdministradores" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Administradores/eliminarAdministradoresResponse" message="tns:eliminarAdministradoresResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Administradores/eliminarAdministradores/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Administradores/eliminarAdministradores/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="listarTodosAdministradores">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Administradores/listarTodosAdministradoresRequest" message="tns:listarTodosAdministradores" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Administradores/listarTodosAdministradoresResponse" message="tns:listarTodosAdministradoresResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Administradores/listarTodosAdministradores/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Administradores/listarTodosAdministradores/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="modificarAdministradores">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Administradores/modificarAdministradoresRequest" message="tns:modificarAdministradores" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Administradores/modificarAdministradoresResponse" message="tns:modificarAdministradoresResponse" />
+    </operation>
+    <operation name="insertarAdministradores">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Administradores/insertarAdministradoresRequest" message="tns:insertarAdministradores" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Administradores/insertarAdministradoresResponse" message="tns:insertarAdministradoresResponse" />
+    </operation>
+    <operation name="obtenerPorIdAdministradores">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Administradores/obtenerPorIdAdministradoresRequest" message="tns:obtenerPorIdAdministradores" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Administradores/obtenerPorIdAdministradoresResponse" message="tns:obtenerPorIdAdministradoresResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Administradores/obtenerPorIdAdministradores/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Administradores/obtenerPorIdAdministradores/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+  </portType>
+  <binding name="AdministradoresPortBinding" type="tns:Administradores">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="eliminarAdministradores">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="listarTodosAdministradores">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="modificarAdministradores">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarAdministradores">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdAdministradores">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="Administradores">
+    <port name="AdministradoresPort" binding="tns:AdministradoresPortBinding">
+      <soap:address location="http://localhost:8080/SoftAsegWS/Administradores" />
+    </port>
+  </service>
+</definitions>

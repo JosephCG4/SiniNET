@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Empleados" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftAsegWS/Empleados?xsd=1" namespace="http://softasegws.services.softaseg.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarTodosEmpleados">
+    <part name="parameters" element="tns:listarTodosEmpleados" />
+  </message>
+  <message name="listarTodosEmpleadosResponse">
+    <part name="parameters" element="tns:listarTodosEmpleadosResponse" />
+  </message>
+  <message name="IOException">
+    <part name="fault" element="tns:IOException" />
+  </message>
+  <message name="InterruptedException">
+    <part name="fault" element="tns:InterruptedException" />
+  </message>
+  <message name="eliminarEmpleados">
+    <part name="parameters" element="tns:eliminarEmpleados" />
+  </message>
+  <message name="eliminarEmpleadosResponse">
+    <part name="parameters" element="tns:eliminarEmpleadosResponse" />
+  </message>
+  <message name="modificarEmpleados">
+    <part name="parameters" element="tns:modificarEmpleados" />
+  </message>
+  <message name="modificarEmpleadosResponse">
+    <part name="parameters" element="tns:modificarEmpleadosResponse" />
+  </message>
+  <message name="listarProcuradores">
+    <part name="parameters" element="tns:listarProcuradores" />
+  </message>
+  <message name="listarProcuradoresResponse">
+    <part name="parameters" element="tns:listarProcuradoresResponse" />
+  </message>
+  <message name="insertarEmpleados">
+    <part name="parameters" element="tns:insertarEmpleados" />
+  </message>
+  <message name="insertarEmpleadosResponse">
+    <part name="parameters" element="tns:insertarEmpleadosResponse" />
+  </message>
+  <message name="obtenerPorIdEmpleados">
+    <part name="parameters" element="tns:obtenerPorIdEmpleados" />
+  </message>
+  <message name="obtenerPorIdEmpleadosResponse">
+    <part name="parameters" element="tns:obtenerPorIdEmpleadosResponse" />
+  </message>
+  <message name="reporteCalificacionProcurador">
+    <part name="parameters" element="tns:reporteCalificacionProcurador" />
+  </message>
+  <message name="reporteCalificacionProcuradorResponse">
+    <part name="parameters" element="tns:reporteCalificacionProcuradorResponse" />
+  </message>
+  <message name="listarPorNombreApellidoPaternoTipoEmpleados">
+    <part name="parameters" element="tns:listarPorNombreApellidoPaternoTipoEmpleados" />
+  </message>
+  <message name="listarPorNombreApellidoPaternoTipoEmpleadosResponse">
+    <part name="parameters" element="tns:listarPorNombreApellidoPaternoTipoEmpleadosResponse" />
+  </message>
+  <portType name="Empleados">
+    <operation name="listarTodosEmpleados">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/listarTodosEmpleadosRequest" message="tns:listarTodosEmpleados" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/listarTodosEmpleadosResponse" message="tns:listarTodosEmpleadosResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/listarTodosEmpleados/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/listarTodosEmpleados/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="eliminarEmpleados">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/eliminarEmpleadosRequest" message="tns:eliminarEmpleados" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/eliminarEmpleadosResponse" message="tns:eliminarEmpleadosResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/eliminarEmpleados/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/eliminarEmpleados/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="modificarEmpleados">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/modificarEmpleadosRequest" message="tns:modificarEmpleados" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/modificarEmpleadosResponse" message="tns:modificarEmpleadosResponse" />
+    </operation>
+    <operation name="listarProcuradores">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/listarProcuradoresRequest" message="tns:listarProcuradores" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/listarProcuradoresResponse" message="tns:listarProcuradoresResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/listarProcuradores/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/listarProcuradores/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="insertarEmpleados">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/insertarEmpleadosRequest" message="tns:insertarEmpleados" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/insertarEmpleadosResponse" message="tns:insertarEmpleadosResponse" />
+    </operation>
+    <operation name="obtenerPorIdEmpleados">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/obtenerPorIdEmpleadosRequest" message="tns:obtenerPorIdEmpleados" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/obtenerPorIdEmpleadosResponse" message="tns:obtenerPorIdEmpleadosResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/obtenerPorIdEmpleados/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/obtenerPorIdEmpleados/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="reporteCalificacionProcurador">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/reporteCalificacionProcuradorRequest" message="tns:reporteCalificacionProcurador" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/reporteCalificacionProcuradorResponse" message="tns:reporteCalificacionProcuradorResponse" />
+    </operation>
+    <operation name="listarPorNombreApellidoPaternoTipoEmpleados">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/listarPorNombreApellidoPaternoTipoEmpleadosRequest" message="tns:listarPorNombreApellidoPaternoTipoEmpleados" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/listarPorNombreApellidoPaternoTipoEmpleadosResponse" message="tns:listarPorNombreApellidoPaternoTipoEmpleadosResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/listarPorNombreApellidoPaternoTipoEmpleados/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Empleados/listarPorNombreApellidoPaternoTipoEmpleados/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+  </portType>
+  <binding name="EmpleadosPortBinding" type="tns:Empleados">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarTodosEmpleados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="eliminarEmpleados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="modificarEmpleados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarProcuradores">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="insertarEmpleados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdEmpleados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="reporteCalificacionProcurador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPorNombreApellidoPaternoTipoEmpleados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="Empleados">
+    <port name="EmpleadosPort" binding="tns:EmpleadosPortBinding">
+      <soap:address location="http://localhost:8080/SoftAsegWS/Empleados" />
+    </port>
+  </service>
+</definitions>

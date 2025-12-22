@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="IOException" type="tns:IOException" />
+  <xs:element name="InterruptedException" type="tns:InterruptedException" />
+  <xs:element name="eliminarSiniestrosVehiculares" type="tns:eliminarSiniestrosVehiculares" />
+  <xs:element name="eliminarSiniestrosVehicularesResponse" type="tns:eliminarSiniestrosVehicularesResponse" />
+  <xs:element name="insertarSiniestrosVehiculares" type="tns:insertarSiniestrosVehiculares" />
+  <xs:element name="insertarSiniestrosVehicularesResponse" type="tns:insertarSiniestrosVehicularesResponse" />
+  <xs:element name="listarPorProcuradorSiniestrosVehiculares" type="tns:listarPorProcuradorSiniestrosVehiculares" />
+  <xs:element name="listarPorProcuradorSiniestrosVehicularesResponse" type="tns:listarPorProcuradorSiniestrosVehicularesResponse" />
+  <xs:element name="listarTodosSiniestrosVehiculares" type="tns:listarTodosSiniestrosVehiculares" />
+  <xs:element name="listarTodosSiniestrosVehicularesResponse" type="tns:listarTodosSiniestrosVehicularesResponse" />
+  <xs:element name="modificarSiniestrosVehiculares" type="tns:modificarSiniestrosVehiculares" />
+  <xs:element name="modificarSiniestrosVehicularesResponse" type="tns:modificarSiniestrosVehicularesResponse" />
+  <xs:element name="obtenerPorIdSiniestrosVehiculares" type="tns:obtenerPorIdSiniestrosVehiculares" />
+  <xs:element name="obtenerPorIdSiniestrosVehicularesResponse" type="tns:obtenerPorIdSiniestrosVehicularesResponse" />
+  <xs:element name="reporteSiniestrosVehiculares" type="tns:reporteSiniestrosVehiculares" />
+  <xs:element name="reporteSiniestrosVehicularesResponse" type="tns:reporteSiniestrosVehicularesResponse" />
+  <xs:complexType name="listarPorProcuradorSiniestrosVehiculares">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idProcurador" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorProcuradorSiniestrosVehicularesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:siniestrosVehicularesDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="siniestrosVehicularesDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:siniestrosDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="conductor" type="tns:personasDTO" />
+          <xs:element minOccurs="0" name="costoEstimado" type="xs:double" />
+          <xs:element minOccurs="0" name="danos" type="xs:string" />
+          <xs:element minOccurs="0" name="poliza" type="tns:polizasVehicularesDTO" />
+          <xs:element minOccurs="0" name="tallerAsignado" type="tns:talleresDTO" />
+          <xs:element minOccurs="0" name="tipoDano" type="tns:tipoDanho" />
+          <xs:element minOccurs="0" name="vehiculo" type="tns:vehiculosDTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="siniestrosDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="calificacionServicio" type="xs:int" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoSiniestro" />
+      <xs:element minOccurs="0" name="fechaHora" type="xs:string" />
+      <xs:element minOccurs="0" name="procurador" type="tns:empleadosDTO" />
+      <xs:element minOccurs="0" name="siniestroId" type="xs:int" />
+      <xs:element minOccurs="0" name="ubicacion" type="tns:ubicacionesDTO" />
+      <xs:element minOccurs="0" name="validez" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="personasDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="personalId" type="xs:int" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="polizasVehicularesDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:polizasDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="porcentajeCobertura" type="xs:int" />
+          <xs:element minOccurs="0" name="tipo" type="tns:tipoPolizaVehicular" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="polizasDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="asegurado" type="tns:personasDTO" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoPoliza" />
+      <xs:element minOccurs="0" name="polizaId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="talleresDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="tallerId" type="xs:int" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacion" type="tns:ubicacionesDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ubicacionesDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="latitud" type="xs:double" />
+      <xs:element minOccurs="0" name="longitud" type="xs:double" />
+      <xs:element minOccurs="0" name="referencia" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacionId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vehiculosDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="color" type="xs:string" />
+      <xs:element minOccurs="0" name="marca" type="tns:marcaVehiculo" />
+      <xs:element minOccurs="0" name="modelo" type="xs:string" />
+      <xs:element minOccurs="0" name="placa" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo" type="tns:tipoVehiculo" />
+      <xs:element minOccurs="0" name="vehiculoId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="empleadosDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:usuariosDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="desempenio" type="tns:desempenhoEmpleado" />
+          <xs:element minOccurs="0" name="tipo" type="tns:tipoEmpleado" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="usuariosDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:personasDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+          <xs:element minOccurs="0" name="correo" type="xs:string" />
+          <xs:element minOccurs="0" name="estado" type="tns:estadoUsuario" />
+          <xs:element minOccurs="0" name="nombreUsuario" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="IOException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InterruptedException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarSiniestrosVehiculares">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="siniestroId" type="xs:int" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaHora" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoSiniestro" />
+      <xs:element minOccurs="0" name="calificacionServicio" type="xs:int" />
+      <xs:element minOccurs="0" name="ubicacion" type="tns:ubicacionesDTO" />
+      <xs:element minOccurs="0" name="procurador" type="tns:empleadosDTO" />
+      <xs:element minOccurs="0" name="validez" type="xs:boolean" />
+      <xs:element minOccurs="0" name="vehiculo" type="tns:vehiculosDTO" />
+      <xs:element minOccurs="0" name="costoEstimado" type="xs:double" />
+      <xs:element minOccurs="0" name="tallerAsignado" type="tns:talleresDTO" />
+      <xs:element minOccurs="0" name="danos" type="xs:string" />
+      <xs:element minOccurs="0" name="conductor" type="tns:personasDTO" />
+      <xs:element minOccurs="0" name="tipoDano" type="tns:tipoDanho" />
+      <xs:element minOccurs="0" name="poliza" type="tns:polizasVehicularesDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarSiniestrosVehicularesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarSiniestrosVehiculares">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="siniestroId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarSiniestrosVehicularesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosSiniestrosVehiculares">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosSiniestrosVehicularesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:siniestrosVehicularesDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reporteSiniestrosVehiculares">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="siniestroId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reporteSiniestrosVehicularesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarSiniestrosVehiculares">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaHora" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoSiniestro" />
+      <xs:element minOccurs="0" name="calificacionServicio" type="xs:int" />
+      <xs:element minOccurs="0" name="ubicacion" type="tns:ubicacionesDTO" />
+      <xs:element minOccurs="0" name="procurador" type="tns:empleadosDTO" />
+      <xs:element minOccurs="0" name="validez" type="xs:boolean" />
+      <xs:element minOccurs="0" name="vehiculo" type="tns:vehiculosDTO" />
+      <xs:element minOccurs="0" name="costoEstimado" type="xs:double" />
+      <xs:element minOccurs="0" name="tallerAsignado" type="tns:talleresDTO" />
+      <xs:element minOccurs="0" name="danos" type="xs:string" />
+      <xs:element minOccurs="0" name="conductor" type="tns:personasDTO" />
+      <xs:element minOccurs="0" name="tipoDano" type="tns:tipoDanho" />
+      <xs:element minOccurs="0" name="poliza" type="tns:polizasVehicularesDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarSiniestrosVehicularesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdSiniestrosVehiculares">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="siniestroId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdSiniestrosVehicularesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:siniestrosVehicularesDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="tipoPolizaVehicular">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="TODORIESGO" />
+      <xs:enumeration value="PERDIDATOTAL" />
+      <xs:enumeration value="RESPONSABILIDADCIVIL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="estadoPoliza">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VIGENTE" />
+      <xs:enumeration value="VENCIDO" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="tipoDanho">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="LEVE" />
+      <xs:enumeration value="MEDIANO" />
+      <xs:enumeration value="FUERTE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="marcaVehiculo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="TOYOTA" />
+      <xs:enumeration value="HYUNDAI" />
+      <xs:enumeration value="KIA" />
+      <xs:enumeration value="CHANGAN" />
+      <xs:enumeration value="CHEVROLET" />
+      <xs:enumeration value="JAC" />
+      <xs:enumeration value="DFSK" />
+      <xs:enumeration value="JETOUR" />
+      <xs:enumeration value="CHERY" />
+      <xs:enumeration value="FORD" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="tipoVehiculo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SEDAN" />
+      <xs:enumeration value="SUV" />
+      <xs:enumeration value="CAMIONETA" />
+      <xs:enumeration value="MOTOCICLETA" />
+      <xs:enumeration value="VAN" />
+      <xs:enumeration value="COUPE" />
+      <xs:enumeration value="MINIVAN" />
+      <xs:enumeration value="HATCHBACK" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="estadoSiniestro">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EN_PROCESO" />
+      <xs:enumeration value="CANCELADO" />
+      <xs:enumeration value="FINALIZADO" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="desempenhoEmpleado">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="INACEPTABLE" />
+      <xs:enumeration value="VALIDO" />
+      <xs:enumeration value="SATISFACTORIO" />
+      <xs:enumeration value="SOBRESALIENTE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="tipoEmpleado">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PROCURADOR" />
+      <xs:enumeration value="OPERADOR" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="estadoUsuario">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ACTIVO" />
+      <xs:enumeration value="INACTIVO" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

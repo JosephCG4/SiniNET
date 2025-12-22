@@ -1,0 +1,5 @@
+pe\edu\pucp\softaseg\db\DBManagerMySQL.class
+pe\edu\pucp\softaseg\db\DBManager.class
+pe\edu\pucp\softaseg\db\util\MotorDeBaseDeDatos.class
+pe\edu\pucp\softaseg\db\DBManagerMSSQL.class
+pe\edu\pucp\softaseg\db\util\Cifrado.class

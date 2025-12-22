@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="IOException" type="tns:IOException" />
+  <xs:element name="InterruptedException" type="tns:InterruptedException" />
+  <xs:element name="eliminarEmpleados" type="tns:eliminarEmpleados" />
+  <xs:element name="eliminarEmpleadosResponse" type="tns:eliminarEmpleadosResponse" />
+  <xs:element name="insertarEmpleados" type="tns:insertarEmpleados" />
+  <xs:element name="insertarEmpleadosResponse" type="tns:insertarEmpleadosResponse" />
+  <xs:element name="listarPorNombreApellidoPaternoTipoEmpleados" type="tns:listarPorNombreApellidoPaternoTipoEmpleados" />
+  <xs:element name="listarPorNombreApellidoPaternoTipoEmpleadosResponse" type="tns:listarPorNombreApellidoPaternoTipoEmpleadosResponse" />
+  <xs:element name="listarProcuradores" type="tns:listarProcuradores" />
+  <xs:element name="listarProcuradoresResponse" type="tns:listarProcuradoresResponse" />
+  <xs:element name="listarTodosEmpleados" type="tns:listarTodosEmpleados" />
+  <xs:element name="listarTodosEmpleadosResponse" type="tns:listarTodosEmpleadosResponse" />
+  <xs:element name="modificarEmpleados" type="tns:modificarEmpleados" />
+  <xs:element name="modificarEmpleadosResponse" type="tns:modificarEmpleadosResponse" />
+  <xs:element name="obtenerPorIdEmpleados" type="tns:obtenerPorIdEmpleados" />
+  <xs:element name="obtenerPorIdEmpleadosResponse" type="tns:obtenerPorIdEmpleadosResponse" />
+  <xs:element name="reporteCalificacionProcurador" type="tns:reporteCalificacionProcurador" />
+  <xs:element name="reporteCalificacionProcuradorResponse" type="tns:reporteCalificacionProcuradorResponse" />
+  <xs:complexType name="modificarEmpleados">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="personalId" type="xs:int" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreUsuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoUsuario" />
+      <xs:element minOccurs="0" name="desempenio" type="tns:desempenhoEmpleado" />
+      <xs:element minOccurs="0" name="tipo" type="tns:tipoEmpleado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarEmpleadosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosEmpleados">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosEmpleadosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:empleadosDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="empleadosDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:usuariosDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="desempenio" type="tns:desempenhoEmpleado" />
+          <xs:element minOccurs="0" name="tipo" type="tns:tipoEmpleado" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="usuariosDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:personasDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+          <xs:element minOccurs="0" name="correo" type="xs:string" />
+          <xs:element minOccurs="0" name="estado" type="tns:estadoUsuario" />
+          <xs:element minOccurs="0" name="nombreUsuario" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="personasDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="personalId" type="xs:int" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IOException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InterruptedException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorNombreApellidoPaternoTipoEmpleados">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="filtro" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorNombreApellidoPaternoTipoEmpleadosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:empleadosDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reporteCalificacionProcurador">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="procuradorId" type="xs:int" />
+      <xs:element minOccurs="0" name="fechaInicio" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaFin" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reporteCalificacionProcuradorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarProcuradores">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="filtroProcurador" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarProcuradoresResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:empleadosDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarEmpleados">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="empleadoId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarEmpleadosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdEmpleados">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="empleadoId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdEmpleadosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:empleadosDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarEmpleados">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreUsuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoUsuario" />
+      <xs:element minOccurs="0" name="desempenio" type="tns:desempenhoEmpleado" />
+      <xs:element minOccurs="0" name="tipo" type="tns:tipoEmpleado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarEmpleadosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="estadoUsuario">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ACTIVO" />
+      <xs:enumeration value="INACTIVO" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="desempenhoEmpleado">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="INACEPTABLE" />
+      <xs:enumeration value="VALIDO" />
+      <xs:enumeration value="SATISFACTORIO" />
+      <xs:enumeration value="SOBRESALIENTE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="tipoEmpleado">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PROCURADOR" />
+      <xs:enumeration value="OPERADOR" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

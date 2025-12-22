@@ -1,0 +1,10 @@
+pe\edu\pucp\softaseg\bo\SiniestroSOATBOTest.class
+pe\edu\pucp\softaseg\bo\SiniestroVehicularBOTest.class
+pe\edu\pucp\softaseg\bo\CentroDeSaludBOTest.class
+pe\edu\pucp\softaseg\bo\VehiculoBOTest.class
+pe\edu\pucp\softaseg\bo\PersonaBOTest.class
+pe\edu\pucp\softaseg\bo\EmpleadoBOTest.class
+pe\edu\pucp\softaseg\bo\TallerBOTest.class
+pe\edu\pucp\softaseg\bo\AdministradorBOTest.class
+pe\edu\pucp\softaseg\bo\PolizaSOATBOTest.class
+pe\edu\pucp\softaseg\bo\PolizaVehicularBOTest.class

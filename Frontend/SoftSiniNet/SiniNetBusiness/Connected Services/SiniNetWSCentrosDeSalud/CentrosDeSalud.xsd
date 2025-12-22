@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="IOException" type="tns:IOException" />
+  <xs:element name="InterruptedException" type="tns:InterruptedException" />
+  <xs:element name="eliminarCentrosDeSalud" type="tns:eliminarCentrosDeSalud" />
+  <xs:element name="eliminarCentrosDeSaludResponse" type="tns:eliminarCentrosDeSaludResponse" />
+  <xs:element name="insertarCentrosDeSalud" type="tns:insertarCentrosDeSalud" />
+  <xs:element name="insertarCentrosDeSaludResponse" type="tns:insertarCentrosDeSaludResponse" />
+  <xs:element name="listarPorNombreCodigoRENIPRESS" type="tns:listarPorNombreCodigoRENIPRESS" />
+  <xs:element name="listarPorNombreCodigoRENIPRESSResponse" type="tns:listarPorNombreCodigoRENIPRESSResponse" />
+  <xs:element name="listarTodosCentrosDeSalud" type="tns:listarTodosCentrosDeSalud" />
+  <xs:element name="listarTodosCentrosDeSaludResponse" type="tns:listarTodosCentrosDeSaludResponse" />
+  <xs:element name="modificarCentrosDeSalud" type="tns:modificarCentrosDeSalud" />
+  <xs:element name="modificarCentrosDeSaludResponse" type="tns:modificarCentrosDeSaludResponse" />
+  <xs:element name="obtenerPorIdCentrosDeSalud" type="tns:obtenerPorIdCentrosDeSalud" />
+  <xs:element name="obtenerPorIdCentrosDeSaludResponse" type="tns:obtenerPorIdCentrosDeSaludResponse" />
+  <xs:complexType name="listarTodosCentrosDeSalud">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosCentrosDeSaludResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:centrosDeSaludDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="centrosDeSaludDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="centroDeSaludId" type="xs:int" />
+      <xs:element minOccurs="0" name="codigoRenipress" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacion" type="tns:ubicacionesDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ubicacionesDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="latitud" type="xs:double" />
+      <xs:element minOccurs="0" name="longitud" type="xs:double" />
+      <xs:element minOccurs="0" name="referencia" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacionId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IOException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InterruptedException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarCentrosDeSalud">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="centroDeSaludId" type="xs:int" />
+      <xs:element minOccurs="0" name="codigoRenipress" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacion" type="tns:ubicacionesDTO" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarCentrosDeSaludResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarCentrosDeSalud">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="centroDeSaludId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarCentrosDeSaludResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorNombreCodigoRENIPRESS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="filtro" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorNombreCodigoRENIPRESSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:centrosDeSaludDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarCentrosDeSalud">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigoRenipress" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacion" type="tns:ubicacionesDTO" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarCentrosDeSaludResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdCentrosDeSalud">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="centroDeSaludId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdCentrosDeSaludResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:centrosDeSaludDTO" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

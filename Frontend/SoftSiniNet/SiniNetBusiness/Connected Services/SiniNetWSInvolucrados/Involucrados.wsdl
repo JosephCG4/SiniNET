@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Involucrados" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftAsegWS/Involucrados?xsd=1" namespace="http://softasegws.services.softaseg.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarTodosInvolucrados">
+    <part name="parameters" element="tns:listarTodosInvolucrados" />
+  </message>
+  <message name="listarTodosInvolucradosResponse">
+    <part name="parameters" element="tns:listarTodosInvolucradosResponse" />
+  </message>
+  <message name="IOException">
+    <part name="fault" element="tns:IOException" />
+  </message>
+  <message name="InterruptedException">
+    <part name="fault" element="tns:InterruptedException" />
+  </message>
+  <message name="obtenerPorIdInvolucrados">
+    <part name="parameters" element="tns:obtenerPorIdInvolucrados" />
+  </message>
+  <message name="obtenerPorIdInvolucradosResponse">
+    <part name="parameters" element="tns:obtenerPorIdInvolucradosResponse" />
+  </message>
+  <message name="modificarInvolucrados">
+    <part name="parameters" element="tns:modificarInvolucrados" />
+  </message>
+  <message name="modificarInvolucradosResponse">
+    <part name="parameters" element="tns:modificarInvolucradosResponse" />
+  </message>
+  <message name="insertarInvolucrados">
+    <part name="parameters" element="tns:insertarInvolucrados" />
+  </message>
+  <message name="insertarInvolucradosResponse">
+    <part name="parameters" element="tns:insertarInvolucradosResponse" />
+  </message>
+  <message name="eliminarInvolucrados">
+    <part name="parameters" element="tns:eliminarInvolucrados" />
+  </message>
+  <message name="eliminarInvolucradosResponse">
+    <part name="parameters" element="tns:eliminarInvolucradosResponse" />
+  </message>
+  <message name="listarTodosAseguradosInvolucrados">
+    <part name="parameters" element="tns:listarTodosAseguradosInvolucrados" />
+  </message>
+  <message name="listarTodosAseguradosInvolucradosResponse">
+    <part name="parameters" element="tns:listarTodosAseguradosInvolucradosResponse" />
+  </message>
+  <message name="listarPorNombreApellidoPaternoInvolucrados">
+    <part name="parameters" element="tns:listarPorNombreApellidoPaternoInvolucrados" />
+  </message>
+  <message name="listarPorNombreApellidoPaternoInvolucradosResponse">
+    <part name="parameters" element="tns:listarPorNombreApellidoPaternoInvolucradosResponse" />
+  </message>
+  <portType name="Involucrados">
+    <operation name="listarTodosInvolucrados">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/listarTodosInvolucradosRequest" message="tns:listarTodosInvolucrados" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/listarTodosInvolucradosResponse" message="tns:listarTodosInvolucradosResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/listarTodosInvolucrados/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/listarTodosInvolucrados/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="obtenerPorIdInvolucrados">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/obtenerPorIdInvolucradosRequest" message="tns:obtenerPorIdInvolucrados" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/obtenerPorIdInvolucradosResponse" message="tns:obtenerPorIdInvolucradosResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/obtenerPorIdInvolucrados/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/obtenerPorIdInvolucrados/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="modificarInvolucrados">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/modificarInvolucradosRequest" message="tns:modificarInvolucrados" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/modificarInvolucradosResponse" message="tns:modificarInvolucradosResponse" />
+    </operation>
+    <operation name="insertarInvolucrados">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/insertarInvolucradosRequest" message="tns:insertarInvolucrados" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/insertarInvolucradosResponse" message="tns:insertarInvolucradosResponse" />
+    </operation>
+    <operation name="eliminarInvolucrados">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/eliminarInvolucradosRequest" message="tns:eliminarInvolucrados" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/eliminarInvolucradosResponse" message="tns:eliminarInvolucradosResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/eliminarInvolucrados/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/eliminarInvolucrados/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="listarTodosAseguradosInvolucrados">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/listarTodosAseguradosInvolucradosRequest" message="tns:listarTodosAseguradosInvolucrados" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/listarTodosAseguradosInvolucradosResponse" message="tns:listarTodosAseguradosInvolucradosResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/listarTodosAseguradosInvolucrados/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/listarTodosAseguradosInvolucrados/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="listarPorNombreApellidoPaternoInvolucrados">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/listarPorNombreApellidoPaternoInvolucradosRequest" message="tns:listarPorNombreApellidoPaternoInvolucrados" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/listarPorNombreApellidoPaternoInvolucradosResponse" message="tns:listarPorNombreApellidoPaternoInvolucradosResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/listarPorNombreApellidoPaternoInvolucrados/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Involucrados/listarPorNombreApellidoPaternoInvolucrados/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+  </portType>
+  <binding name="InvolucradosPortBinding" type="tns:Involucrados">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarTodosInvolucrados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="obtenerPorIdInvolucrados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="modificarInvolucrados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarInvolucrados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarInvolucrados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="listarTodosAseguradosInvolucrados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="listarPorNombreApellidoPaternoInvolucrados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="Involucrados">
+    <port name="InvolucradosPort" binding="tns:InvolucradosPortBinding">
+      <soap:address location="http://localhost:8080/SoftAsegWS/Involucrados" />
+    </port>
+  </service>
+</definitions>

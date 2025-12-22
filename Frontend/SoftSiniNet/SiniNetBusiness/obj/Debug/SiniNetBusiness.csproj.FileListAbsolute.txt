@@ -1,0 +1,217 @@
+C:\Users\angel\Downloads\SiniNet v9\SiniNet v8\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\angel\Downloads\SiniNet v9\SiniNet v8\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNet v9\SiniNet v8\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNet v9\SiniNet v8\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\angel\Downloads\SiniNet v9\SiniNet v8\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\angel\Downloads\SiniNet v9\SiniNet v8\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNet v9\SiniNet v8\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNet v15\SiniNet v8\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\angel\Downloads\SiniNet v15\SiniNet v8\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNet v15\SiniNet v8\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNet v15\SiniNet v8\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\angel\Downloads\SiniNet v15\SiniNet v8\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\angel\Downloads\SiniNet v15\SiniNet v8\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNet v15\SiniNet v8\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNet v16\SiniNet v16\SiniNet v8\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\JOAQUIN\Downloads\SiniNet v16\SiniNet v16\SiniNet v8\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\JOAQUIN\Downloads\SiniNet v16\SiniNet v16\SiniNet v8\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNet v16\SiniNet v16\SiniNet v8\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNet v16\SiniNet v16\SiniNet v8\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\JOAQUIN\Downloads\SiniNet v16\SiniNet v16\SiniNet v8\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNet v16\SiniNet v16\SiniNet v8\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\User\Downloads\SiniNet v17\SiniNet v8\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\User\Downloads\SiniNet v17\SiniNet v8\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\User\Downloads\SiniNet v17\SiniNet v8\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\User\Downloads\SiniNet v17\SiniNet v8\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\SiniNet v17\SiniNet v8\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\SiniNet v17\SiniNet v8\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\User\Downloads\SiniNet v17\SiniNet v8\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNet v18\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\JOAQUIN\Downloads\SiniNet v18\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\JOAQUIN\Downloads\SiniNet v18\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNet v18\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNet v18\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\JOAQUIN\Downloads\SiniNet v18\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNet v18\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\User\Downloads\SiniNet v19\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\User\Downloads\SiniNet v19\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\User\Downloads\SiniNet v19\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\User\Downloads\SiniNet v19\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\SiniNet v19\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\SiniNet v19\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\User\Downloads\SiniNet v19\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\josep\Downloads\SiniNetV20\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\josep\Downloads\SiniNetV20\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\josep\Downloads\SiniNetV20\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\josep\Downloads\SiniNetV20\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\josep\Downloads\SiniNetV20\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\josep\Downloads\SiniNetV20\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\josep\Downloads\SiniNetV20\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNet v22\SiniNet v22\SiniNetV20\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\angel\Downloads\SiniNet v22\SiniNet v22\SiniNetV20\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNet v22\SiniNet v22\SiniNetV20\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNet v22\SiniNet v22\SiniNetV20\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\angel\Downloads\SiniNet v22\SiniNet v22\SiniNetV20\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\angel\Downloads\SiniNet v22\SiniNet v22\SiniNetV20\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNet v22\SiniNet v22\SiniNetV20\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNet v23\SiniNet v23\SiniNet v22\SiniNetV20\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\JOAQUIN\Downloads\SiniNet v23\SiniNet v23\SiniNet v22\SiniNetV20\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNet v23\SiniNet v23\SiniNet v22\SiniNetV20\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNet v23\SiniNet v23\SiniNet v22\SiniNetV20\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\JOAQUIN\Downloads\SiniNet v23\SiniNet v23\SiniNet v22\SiniNetV20\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\JOAQUIN\Downloads\SiniNet v23\SiniNet v23\SiniNet v22\SiniNetV20\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNet v23\SiniNet v23\SiniNet v22\SiniNetV20\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNetV24\SiniNetV24\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\angel\Downloads\SiniNetV24\SiniNetV24\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNetV24\SiniNetV24\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNetV24\SiniNetV24\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\angel\Downloads\SiniNetV24\SiniNetV24\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\angel\Downloads\SiniNetV24\SiniNetV24\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNetV24\SiniNetV24\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNetV25\SiniNetV25\SiniNetV24\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNetV25\SiniNetV25\SiniNetV24\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNetV25\SiniNetV25\SiniNetV24\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNetV25\SiniNetV25\SiniNetV24\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNetV25\SiniNetV25\SiniNetV24\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNetV25\SiniNetV25\SiniNetV24\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNetV25\SiniNetV25\SiniNetV24\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNetV27\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\angel\Downloads\SiniNetV27\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNetV27\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNetV27\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\angel\Downloads\SiniNetV27\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\angel\Downloads\SiniNetV27\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNetV27\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNetV28\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\JOAQUIN\Downloads\SiniNetV28\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNetV28\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNetV28\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\JOAQUIN\Downloads\SiniNetV28\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\JOAQUIN\Downloads\SiniNetV28\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNetV28\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNetV29\SiniNetV29\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNetV29\SiniNetV29\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNetV29\SiniNetV29\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNetV29\SiniNetV29\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNetV29\SiniNetV29\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNetV29\SiniNetV29\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNetV29\SiniNetV29\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNetV30\SiniNetV30\SiniNetV29\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\angel\Downloads\SiniNetV30\SiniNetV30\SiniNetV29\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNetV30\SiniNetV30\SiniNetV29\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNetV30\SiniNetV30\SiniNetV29\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\angel\Downloads\SiniNetV30\SiniNetV30\SiniNetV29\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\angel\Downloads\SiniNetV30\SiniNetV30\SiniNetV29\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNetV30\SiniNetV30\SiniNetV29\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNetV31\SiniNetV31\SiniNetV30\SiniNetV29\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\JOAQUIN\Downloads\SiniNetV31\SiniNetV31\SiniNetV30\SiniNetV29\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNetV31\SiniNetV31\SiniNetV30\SiniNetV29\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNetV31\SiniNetV31\SiniNetV30\SiniNetV29\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\JOAQUIN\Downloads\SiniNetV31\SiniNetV31\SiniNetV30\SiniNetV29\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\JOAQUIN\Downloads\SiniNetV31\SiniNetV31\SiniNetV30\SiniNetV29\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNetV31\SiniNetV31\SiniNetV30\SiniNetV29\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNetV32\SiniNetV32\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\angel\Downloads\SiniNetV32\SiniNetV32\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNetV32\SiniNetV32\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNetV32\SiniNetV32\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\angel\Downloads\SiniNetV32\SiniNetV32\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\angel\Downloads\SiniNetV32\SiniNetV32\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNetV32\SiniNetV32\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNetV34\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\JOAQUIN\Downloads\SiniNetV34\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNetV34\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNetV34\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\JOAQUIN\Downloads\SiniNetV34\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\JOAQUIN\Downloads\SiniNetV34\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNetV34\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNetV35\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\JOAQUIN\Downloads\SiniNetV35\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNetV35\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNetV35\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\JOAQUIN\Downloads\SiniNetV35\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\JOAQUIN\Downloads\SiniNetV35\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNetV35\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNetV36\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\JOAQUIN\Downloads\SiniNetV36\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNetV36\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNetV36\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\JOAQUIN\Downloads\SiniNetV36\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\JOAQUIN\Downloads\SiniNetV36\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNetV36\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\josep\OneDrive\Escritorio\TRABAJO-PROGRA3\SiniNetV37\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\josep\OneDrive\Escritorio\TRABAJO-PROGRA3\SiniNetV37\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\josep\OneDrive\Escritorio\TRABAJO-PROGRA3\SiniNetV37\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\josep\OneDrive\Escritorio\TRABAJO-PROGRA3\SiniNetV37\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\josep\OneDrive\Escritorio\TRABAJO-PROGRA3\SiniNetV37\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\Escritorio\TRABAJO-PROGRA3\SiniNetV37\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\josep\OneDrive\Escritorio\TRABAJO-PROGRA3\SiniNetV37\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNetV38\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\JOAQUIN\Downloads\SiniNetV38\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNetV38\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNetV38\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\JOAQUIN\Downloads\SiniNetV38\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\JOAQUIN\Downloads\SiniNetV38\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNetV38\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNetV39\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\JOAQUIN\Downloads\SiniNetV39\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNetV39\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\SiniNetV39\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\JOAQUIN\Downloads\SiniNetV39\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\JOAQUIN\Downloads\SiniNetV39\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\SiniNetV39\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNetV39\SiniNetV39\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\angel\Downloads\SiniNetV39\SiniNetV39\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNetV39\SiniNetV39\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNetV39\SiniNetV39\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\angel\Downloads\SiniNetV39\SiniNetV39\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\angel\Downloads\SiniNetV39\SiniNetV39\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNetV39\SiniNetV39\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\josep\OneDrive\Escritorio\TRABAJO-PROGRA3\SiniNetV40\SiniNetV39\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\josep\OneDrive\Escritorio\TRABAJO-PROGRA3\SiniNetV40\SiniNetV39\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\josep\OneDrive\Escritorio\TRABAJO-PROGRA3\SiniNetV40\SiniNetV39\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\josep\OneDrive\Escritorio\TRABAJO-PROGRA3\SiniNetV40\SiniNetV39\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\josep\OneDrive\Escritorio\TRABAJO-PROGRA3\SiniNetV40\SiniNetV39\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\Escritorio\TRABAJO-PROGRA3\SiniNetV40\SiniNetV39\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\josep\OneDrive\Escritorio\TRABAJO-PROGRA3\SiniNetV40\SiniNetV39\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNet v41\SiniNet v41\SiniNetV40\SiniNetV39\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\angel\Downloads\SiniNet v41\SiniNet v41\SiniNetV40\SiniNetV39\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNet v41\SiniNet v41\SiniNetV40\SiniNetV39\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\SiniNet v41\SiniNet v41\SiniNetV40\SiniNetV39\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\angel\Downloads\SiniNet v41\SiniNet v41\SiniNetV40\SiniNetV39\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\angel\Downloads\SiniNet v41\SiniNet v41\SiniNetV40\SiniNetV39\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\SiniNet v41\SiniNet v41\SiniNetV40\SiniNetV39\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNet v42\SiniNet v42\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNet v42\SiniNet v42\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNet v42\SiniNet v42\SiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNet v42\SiniNet v42\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNet v42\SiniNet v42\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNet v42\SiniNet v42\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\Luis\Desktop\PUCP\PROGRAMACION3\2025_2\ProyectoProg3\SiniNet v42\SiniNet v42\SiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Documents\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\angel\Documents\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\angel\Documents\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Documents\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\angel\Documents\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\angel\Documents\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\angel\Documents\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\JOAQUIN\Downloads\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\JOAQUIN\Downloads\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\JOAQUIN\Downloads\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\JOAQUIN\Downloads\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\JOAQUIN\Downloads\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+D:\EntregaFinal\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+D:\EntregaFinal\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+D:\EntregaFinal\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+D:\EntregaFinal\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+D:\EntregaFinal\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+D:\EntregaFinal\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+D:\EntregaFinal\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\EntregaFinal\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll.config
+C:\Users\angel\Downloads\EntregaFinal\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\EntregaFinal\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\bin\Debug\SiniNetBusiness.pdb
+C:\Users\angel\Downloads\EntregaFinal\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.AssemblyReference.cache
+C:\Users\angel\Downloads\EntregaFinal\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.csproj.CoreCompileInputs.cache
+C:\Users\angel\Downloads\EntregaFinal\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.dll
+C:\Users\angel\Downloads\EntregaFinal\EntregaFinal\SiniNet\Frontend\SoftSiniNet\SiniNetBusiness\obj\Debug\SiniNetBusiness.pdb

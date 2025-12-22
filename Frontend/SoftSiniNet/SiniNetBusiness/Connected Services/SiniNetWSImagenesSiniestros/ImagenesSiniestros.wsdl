@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="ImagenesSiniestros" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftAsegWS/ImagenesSiniestros?xsd=1" namespace="http://softasegws.services.softaseg.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="subirImagenSiniestro">
+    <part name="parameters" element="tns:subirImagenSiniestro" />
+  </message>
+  <message name="subirImagenSiniestroResponse">
+    <part name="parameters" element="tns:subirImagenSiniestroResponse" />
+  </message>
+  <message name="eliminarImagenSiniestro">
+    <part name="parameters" element="tns:eliminarImagenSiniestro" />
+  </message>
+  <message name="eliminarImagenSiniestroResponse">
+    <part name="parameters" element="tns:eliminarImagenSiniestroResponse" />
+  </message>
+  <message name="listarImagenesPorSiniestro">
+    <part name="parameters" element="tns:listarImagenesPorSiniestro" />
+  </message>
+  <message name="listarImagenesPorSiniestroResponse">
+    <part name="parameters" element="tns:listarImagenesPorSiniestroResponse" />
+  </message>
+  <portType name="ImagenesSiniestros">
+    <operation name="subirImagenSiniestro">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/ImagenesSiniestros/subirImagenSiniestroRequest" message="tns:subirImagenSiniestro" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/ImagenesSiniestros/subirImagenSiniestroResponse" message="tns:subirImagenSiniestroResponse" />
+    </operation>
+    <operation name="eliminarImagenSiniestro">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/ImagenesSiniestros/eliminarImagenSiniestroRequest" message="tns:eliminarImagenSiniestro" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/ImagenesSiniestros/eliminarImagenSiniestroResponse" message="tns:eliminarImagenSiniestroResponse" />
+    </operation>
+    <operation name="listarImagenesPorSiniestro">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/ImagenesSiniestros/listarImagenesPorSiniestroRequest" message="tns:listarImagenesPorSiniestro" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/ImagenesSiniestros/listarImagenesPorSiniestroResponse" message="tns:listarImagenesPorSiniestroResponse" />
+    </operation>
+  </portType>
+  <binding name="ImagenesSiniestrosPortBinding" type="tns:ImagenesSiniestros">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="subirImagenSiniestro">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarImagenSiniestro">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarImagenesPorSiniestro">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ImagenesSiniestros">
+    <port name="ImagenesSiniestrosPort" binding="tns:ImagenesSiniestrosPortBinding">
+      <soap:address location="http://localhost:8080/SoftAsegWS/ImagenesSiniestros" />
+    </port>
+  </service>
+</definitions>

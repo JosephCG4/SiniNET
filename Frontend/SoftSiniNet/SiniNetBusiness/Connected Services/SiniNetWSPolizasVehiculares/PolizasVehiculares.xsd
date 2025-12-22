@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="IOException" type="tns:IOException" />
+  <xs:element name="InterruptedException" type="tns:InterruptedException" />
+  <xs:element name="eliminarPolizasVehiculares" type="tns:eliminarPolizasVehiculares" />
+  <xs:element name="eliminarPolizasVehicularesResponse" type="tns:eliminarPolizasVehicularesResponse" />
+  <xs:element name="insertarPolizasVehiculares" type="tns:insertarPolizasVehiculares" />
+  <xs:element name="insertarPolizasVehicularesResponse" type="tns:insertarPolizasVehicularesResponse" />
+  <xs:element name="listarPorNombreApellidoAseguradoPolizasVehiculares" type="tns:listarPorNombreApellidoAseguradoPolizasVehiculares" />
+  <xs:element name="listarPorNombreApellidoAseguradoPolizasVehicularesResponse" type="tns:listarPorNombreApellidoAseguradoPolizasVehicularesResponse" />
+  <xs:element name="listarTodosPolizasVehiculares" type="tns:listarTodosPolizasVehiculares" />
+  <xs:element name="listarTodosPolizasVehicularesResponse" type="tns:listarTodosPolizasVehicularesResponse" />
+  <xs:element name="modificarPolizasVehiculares" type="tns:modificarPolizasVehiculares" />
+  <xs:element name="modificarPolizasVehicularesResponse" type="tns:modificarPolizasVehicularesResponse" />
+  <xs:element name="obtenerPorIdPolizasVehiculares" type="tns:obtenerPorIdPolizasVehiculares" />
+  <xs:element name="obtenerPorIdPolizasVehicularesResponse" type="tns:obtenerPorIdPolizasVehicularesResponse" />
+  <xs:complexType name="listarTodosPolizasVehiculares">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosPolizasVehicularesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:polizasVehicularesDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="polizasVehicularesDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:polizasDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="porcentajeCobertura" type="xs:int" />
+          <xs:element minOccurs="0" name="tipo" type="tns:tipoPolizaVehicular" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="polizasDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="asegurado" type="tns:personasDTO" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoPoliza" />
+      <xs:element minOccurs="0" name="polizaId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="personasDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="personalId" type="xs:int" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IOException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InterruptedException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPolizasVehiculares">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="polizaId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPolizasVehicularesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorNombreApellidoAseguradoPolizasVehiculares">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="filtro" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorNombreApellidoAseguradoPolizasVehicularesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:polizasVehicularesDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdPolizasVehiculares">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="polizaId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdPolizasVehicularesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:polizasVehicularesDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPolizasVehiculares">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="polizaId" type="xs:int" />
+      <xs:element minOccurs="0" name="asegurado" type="tns:personasDTO" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoPoliza" />
+      <xs:element minOccurs="0" name="tipo" type="tns:tipoPolizaVehicular" />
+      <xs:element minOccurs="0" name="porcentajeCobertura" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPolizasVehicularesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPolizasVehiculares">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="asegurado" type="tns:personasDTO" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoPoliza" />
+      <xs:element minOccurs="0" name="tipo" type="tns:tipoPolizaVehicular" />
+      <xs:element minOccurs="0" name="porcentajeCobertura" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPolizasVehicularesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="tipoPolizaVehicular">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="TODORIESGO" />
+      <xs:enumeration value="PERDIDATOTAL" />
+      <xs:enumeration value="RESPONSABILIDADCIVIL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="estadoPoliza">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VIGENTE" />
+      <xs:enumeration value="VENCIDO" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

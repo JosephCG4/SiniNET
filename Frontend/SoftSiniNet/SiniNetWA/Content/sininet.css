@@ -1,0 +1,264 @@
+﻿html, body {
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(to bottom right, #ffffff 30%, #C9A227 100%);
+    background-attachment: fixed;
+    color: #1F2937;
+}
+
+    body.auth-body {
+        display: flex;
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra horizontalmente */
+        height: 100vh; /* Ocupa toda la altura de la pantalla */
+    }
+
+/* Ajusta el menú lateral */
+#bdSidebar {
+    height: 100%;
+    min-height: 100vh;
+}
+
+/* Ajusta el contenido derecho para ocupar todo el alto */
+.bg-light.flex-fill {
+    min-height: 100vh;
+}
+
+.gfg {
+    color: #fff;
+    background-color: #1E3A5F;
+    height: 100%;
+    padding: 15px 10px;
+    border-right: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.mynav {
+    color: #fff;
+}
+
+    .mynav li a {
+        color: #fff;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+        border-radius: 5px;
+        padding: 8px 10px;
+        transition: all 0.3s ease;
+    }
+
+        .mynav li a.active {
+            background: #3B82F6; /* Azul medio */
+            color: #fff;
+        }
+
+        .mynav li a:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: #F4B400; /* Dorado */
+        }
+
+        .mynav li a i {
+            width: 25px;
+            text-align: center;
+            margin-right: 5px;
+        }
+
+.notification-badge {
+    background-color: rgba(244, 180, 0, 0.8); /* Dorado translúcido */
+    float: right;
+    color: #1E3A5F;
+    font-size: 14px;
+    padding: 0px 8px;
+    border-radius: 4px;
+}
+
+.table table tbody tr td a,
+.table table tbody tr td span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #1E3A5F; /* Azul petróleo para texto */
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.table table > tbody > tr > td > span {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #3B82F6; /* Azul medio */
+    border-color: #3B82F6;
+}
+
+.table table > tbody > tr > td:first-child > a,
+.table table > tbody > tr > td:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.table table > tbody > tr > td:last-child > a,
+.table table > tbody > tr > td:last-child > span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.table table > tbody > tr > td > a:hover,
+.table table > tbody > tr > td > span:hover,
+.table table > tbody > tr > td > a:focus,
+.table table > tbody > tr > td > span:focus {
+    z-index: 2;
+    color: #1E3A5F;
+    background-color: #F4B400; /* Dorado */
+    border-color: #F4B400;
+    transition: all 0.2s ease;
+}
+
+.bg-primary {
+    background-color: #1E3A5F !important;
+}
+
+.text-primary {
+    color: #1E3A5F !important;
+}
+
+.btn-primary {
+    background-color: #F4B400;
+    border-color: #F4B400;
+    color: #1E3A5F;
+}
+
+    .btn-primary:hover {
+        background-color: #dba800;
+        border-color: #dba800;
+        color: #fff;
+    }
+
+/* === Scrollbar personalizado === */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(30, 58, 95, 0.7);
+    border-radius: 4px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #1E3A5F;
+    }
+
+.titulo-sininet {
+    text-align: center;
+    margin-top: 120px;
+    color: #1E3A5F; /* Azul petróleo */
+    font-family: 'Ubuntu', sans-serif;
+    animation: fadeIn 1s ease-out;
+}
+
+    .titulo-sininet h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #1E3A5F;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+    }
+
+        .titulo-sininet h1::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: #F4B400; /* Dorado */
+            border-radius: 2px;
+        }
+
+    .titulo-sininet p {
+        margin-top: 25px;
+        font-size: 1.3rem;
+        color: #3B82F6; /* Azul medio */
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Botón de usuario (Administrador) --- */
+.btn-user {
+    background-color: #C9A227; /* Dorado */
+    color: #1E3A5F; /* Azul petróleo */
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 14px;
+    transition: all 0.3s ease;
+}
+
+    .btn-user:hover,
+    .btn-user:focus {
+        background-color: #b18e1f; /* Dorado más oscuro */
+        color: #ffffff; /* Texto blanco al pasar el mouse */
+    }
+
+    /* --- Ícono dentro del botón --- */
+    .btn-user i {
+        color: #1E3A5F;
+        transition: color 0.3s ease;
+    }
+
+    .btn-user:hover i {
+        color: #ffffff;
+    }
+
+/* --- Alinear perfectamente el dropdown con el botón --- */
+.dropdown-menu {
+    left: 53% !important; /* centra el menú horizontalmente */
+    transform: translateX(-50%) !important; /* corrige desplazamiento */
+    top: 100% !important; /* justo debajo del botón */
+    margin-top: 6px; /* pequeño espacio entre ambos */
+
+    background-color: rgba(201, 162, 39, 0.85); /* dorado tenue translúcido */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    padding: 10px 0;
+}
+
+/* --- Texto dentro del dropdown --- */
+.dropdown-item {
+    color: #1E3A5F; /* Azul petróleo */
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+    /* --- Efecto hover --- */
+    .dropdown-item:hover {
+        background-color: rgba(177, 142, 31, 0.9); /* dorado un poco más oscuro */
+        color: #ffffff;
+    }
+
+
+
+
+

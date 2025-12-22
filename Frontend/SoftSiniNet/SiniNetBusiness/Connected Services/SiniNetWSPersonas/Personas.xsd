@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="IOException" type="tns:IOException" />
+  <xs:element name="InterruptedException" type="tns:InterruptedException" />
+  <xs:element name="eliminarPersonas" type="tns:eliminarPersonas" />
+  <xs:element name="eliminarPersonasResponse" type="tns:eliminarPersonasResponse" />
+  <xs:element name="insertarPersonas" type="tns:insertarPersonas" />
+  <xs:element name="insertarPersonasResponse" type="tns:insertarPersonasResponse" />
+  <xs:element name="listarAseguradosPorSiniestro" type="tns:listarAseguradosPorSiniestro" />
+  <xs:element name="listarAseguradosPorSiniestroResponse" type="tns:listarAseguradosPorSiniestroResponse" />
+  <xs:element name="listarPorNombresApellidosDniPersona" type="tns:listarPorNombresApellidosDniPersona" />
+  <xs:element name="listarPorNombresApellidosDniPersonaResponse" type="tns:listarPorNombresApellidosDniPersonaResponse" />
+  <xs:element name="listarTodosPersonas" type="tns:listarTodosPersonas" />
+  <xs:element name="listarTodosPersonasResponse" type="tns:listarTodosPersonasResponse" />
+  <xs:element name="modificarPersonas" type="tns:modificarPersonas" />
+  <xs:element name="modificarPersonasResponse" type="tns:modificarPersonasResponse" />
+  <xs:element name="obtenerPorIdPersonas" type="tns:obtenerPorIdPersonas" />
+  <xs:element name="obtenerPorIdPersonasResponse" type="tns:obtenerPorIdPersonasResponse" />
+  <xs:complexType name="listarPorNombresApellidosDniPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="filtro" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorNombresApellidosDniPersonaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personasDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="personasDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="personalId" type="xs:int" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IOException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InterruptedException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPersonas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="personalId" type="xs:int" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPersonasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdPersonas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="personalId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdPersonasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:personasDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarAseguradosPorSiniestro">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idSiniestro" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarAseguradosPorSiniestroResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personasDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPersonas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="personalId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPersonasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPersonas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPersonasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosPersonas">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosPersonasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personasDTO" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

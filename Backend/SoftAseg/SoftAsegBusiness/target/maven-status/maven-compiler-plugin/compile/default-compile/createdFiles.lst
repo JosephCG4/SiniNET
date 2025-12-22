@@ -1,0 +1,13 @@
+pe\edu\pucp\softaseg\bo\ImagenSiniestroBO.class
+pe\edu\pucp\softaseg\bo\PolizaSOATBO.class
+pe\edu\pucp\softaseg\bo\VehiculoBO.class
+pe\edu\pucp\softaseg\bo\TallerBO.class
+pe\edu\pucp\softaseg\bo\PersonaBO.class
+pe\edu\pucp\softaseg\bo\PolizaVehicularBO.class
+pe\edu\pucp\softaseg\bo\SiniestroBO.class
+pe\edu\pucp\softaseg\bo\EmpleadoBO.class
+pe\edu\pucp\softaseg\bo\InvolucradoBO.class
+pe\edu\pucp\softaseg\bo\AdministradorBO.class
+pe\edu\pucp\softaseg\bo\SiniestroSOATBO.class
+pe\edu\pucp\softaseg\bo\CentroDeSaludBO.class
+pe\edu\pucp\softaseg\bo\SiniestroVehicularBO.class

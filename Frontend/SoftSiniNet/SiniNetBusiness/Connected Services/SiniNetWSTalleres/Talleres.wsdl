@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Talleres" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftAsegWS/Talleres?xsd=1" namespace="http://softasegws.services.softaseg.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="insertarTalleres">
+    <part name="parameters" element="tns:insertarTalleres" />
+  </message>
+  <message name="insertarTalleresResponse">
+    <part name="parameters" element="tns:insertarTalleresResponse" />
+  </message>
+  <message name="obtenerPorIdTalleres">
+    <part name="parameters" element="tns:obtenerPorIdTalleres" />
+  </message>
+  <message name="obtenerPorIdTalleresResponse">
+    <part name="parameters" element="tns:obtenerPorIdTalleresResponse" />
+  </message>
+  <message name="IOException">
+    <part name="fault" element="tns:IOException" />
+  </message>
+  <message name="InterruptedException">
+    <part name="fault" element="tns:InterruptedException" />
+  </message>
+  <message name="eliminarTalleres">
+    <part name="parameters" element="tns:eliminarTalleres" />
+  </message>
+  <message name="eliminarTalleresResponse">
+    <part name="parameters" element="tns:eliminarTalleresResponse" />
+  </message>
+  <message name="listarTodosTalleres">
+    <part name="parameters" element="tns:listarTodosTalleres" />
+  </message>
+  <message name="listarTodosTalleresResponse">
+    <part name="parameters" element="tns:listarTodosTalleresResponse" />
+  </message>
+  <message name="modificarTalleres">
+    <part name="parameters" element="tns:modificarTalleres" />
+  </message>
+  <message name="modificarTalleresResponse">
+    <part name="parameters" element="tns:modificarTalleresResponse" />
+  </message>
+  <message name="listarPorNombreTalleres">
+    <part name="parameters" element="tns:listarPorNombreTalleres" />
+  </message>
+  <message name="listarPorNombreTalleresResponse">
+    <part name="parameters" element="tns:listarPorNombreTalleresResponse" />
+  </message>
+  <portType name="Talleres">
+    <operation name="insertarTalleres">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Talleres/insertarTalleresRequest" message="tns:insertarTalleres" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Talleres/insertarTalleresResponse" message="tns:insertarTalleresResponse" />
+    </operation>
+    <operation name="obtenerPorIdTalleres">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Talleres/obtenerPorIdTalleresRequest" message="tns:obtenerPorIdTalleres" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Talleres/obtenerPorIdTalleresResponse" message="tns:obtenerPorIdTalleresResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Talleres/obtenerPorIdTalleres/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Talleres/obtenerPorIdTalleres/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="eliminarTalleres">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Talleres/eliminarTalleresRequest" message="tns:eliminarTalleres" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Talleres/eliminarTalleresResponse" message="tns:eliminarTalleresResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Talleres/eliminarTalleres/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Talleres/eliminarTalleres/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="listarTodosTalleres">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Talleres/listarTodosTalleresRequest" message="tns:listarTodosTalleres" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Talleres/listarTodosTalleresResponse" message="tns:listarTodosTalleresResponse" />
+    </operation>
+    <operation name="modificarTalleres">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Talleres/modificarTalleresRequest" message="tns:modificarTalleres" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Talleres/modificarTalleresResponse" message="tns:modificarTalleresResponse" />
+    </operation>
+    <operation name="listarPorNombreTalleres">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Talleres/listarPorNombreTalleresRequest" message="tns:listarPorNombreTalleres" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/Talleres/listarPorNombreTalleresResponse" message="tns:listarPorNombreTalleresResponse" />
+    </operation>
+  </portType>
+  <binding name="TalleresPortBinding" type="tns:Talleres">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="insertarTalleres">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdTalleres">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="eliminarTalleres">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="listarTodosTalleres">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarTalleres">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPorNombreTalleres">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Talleres">
+    <port name="TalleresPort" binding="tns:TalleresPortBinding">
+      <soap:address location="http://localhost:8080/SoftAsegWS/Talleres" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiniNet.Master.cs" Inherits="SiniNetWA.SinniNet" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Fonts/css/all.css" rel="stylesheet" />
+    <link href="Content/sininet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/jquery-3.7.1.js"></script>
+    <script src="Scripts/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <title>
+        <asp:ContentPlaceHolder ID="cphTitulo" runat="server"></asp:ContentPlaceHolder>
+    </title>
+</head>
+<body>
+    <form runat="server">
+        <asp:ContentPlaceHolder ID="cphScripts" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <div class="container-fluid d-flex p-0 h-100">
+            <!--Menu Lateral-->
+            <div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-primary text-white offcanvas-md offcanvas-start">
+                <a href="http://www.pucp.edu.pe" class="navbar-brand d-flex justify-content-center align-items-center mb-3">
+                    <img src="Images/LogoSiniNet.png" width="150" alt="SiniNet Logo" />
+                </a>
+                <hr>
+                <ul class="mynav nav nav-pills flex-column mb-auto">
+                    <li id="liCentrosSaludAdmin" runat="server" class="nav-item mb-1">
+                        <a href="centrosSaludAdmin_listado.aspx"><i class="fa-solid fa-user-graduate"></i>Centros de Salud</a>
+                    </li>
+                    <li id="liTalleresAdmin" runat="server" class="nav-item mb-1">
+                        <a href="talleresAdmin_listado.aspx"><i class="fa-solid fa-person-chalkboard"></i>Talleres</a>
+                    </li>
+                    <li id="liEmpleadosAdmin" runat="server" class="nav-item mb-1">
+                        <a href="empleadosAdmin_listado.aspx"><i class="fa-solid fa-book"></i>Empleados</a>
+                    </li>
+                    <li id="liAseguradosAdmin" runat="server" class="nav-item mb-1">
+                        <a href="aseguradosAdmin_listado.aspx"><i class="fa-solid fa-person"></i>Asegurados</a>
+                    </li>
+
+                    <li id="liVehiculosAdmin" runat="server" class="nav-item mb-1">
+                        <a href="vehiculosAdmin_listado.aspx"><i class="fa-solid fa-car"></i>Vehículos</a>
+                    </li>
+
+                    <li id="liPolizasSoat" runat="server" class="nav-item mb-1">
+                        <a href="polizasSoat_listado.aspx"><i class="fa-solid fa-file"></i>Polizas SOAT</a>
+                    </li>
+                    <li id="liPolizasVehiculares" runat="server" class="nav-item mb-1">
+                        <a href="polizaVehicular_listado.aspx"><i class="fa-solid fa-file"></i>Polizas Vehiculares</a>
+                    </li>
+
+                    <li id="lireportesAdmin" runat="server" class="nav-item mb-1">
+                        <a href="reportesAdmin.aspx"><i class="fa-regular fa-clipboard"></i>Reportes</a>
+                    </li>
+                    <li id="liExpedientesAdmin" runat="server" class="nav-item mb-1">
+                        <a href="expedientesAdmin_listado.aspx"><i class="fa-solid fa-star"></i>Calificar Expedientes</a>
+                    </li>
+                                       
+                    <li id="liSiniestrosVehicularesOperario" runat="server" class="nav-item mb-1">
+                        <a href="siniestrosVehiculares_listado.aspx"><i class="fa-solid fa-car-side"></i>Siniestros Vehiculares</a>
+                    </li>
+                    <li id="liSiniestrosSoatOperario" runat="server" class="nav-item mb-1">
+                        <a href="SiniestrosSoatListado.aspx"><i class="fa-solid fa-suitcase-medical"></i>Siniestros SOAT</a>
+                    </li>
+                    <li id="liReportesOperario" runat="server" class="nav-item mb-1">
+                        <a href="reportesOperario.aspx"><i class="fa-regular fa-clipboard"></i>Reportes</a>
+                    </li>
+                    <li id="liSiniestrosVehicularesProcurador" runat="server" class="nav-item mb-1">
+                        <a href="siniestrosVehiculares_listado.aspx"><i class="fa-solid fa-car-side"></i>Siniestros Vehiculares</a>
+                    </li>
+                    <li id="liSiniestrosSoatProcurador" runat="server" class="nav-item mb-1">
+                        <a href="SiniestrosSoatListado.aspx"><i class="fa-solid fa-suitcase-medical"></i>Siniestros SOAT</a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="d-flex">
+                    <i class="fa-solid fa-book me-2"></i>
+                    <h6 class="mt-1 mb-0">PUCP - Programación 3</h6>
+                </div>
+            </div>
+            <!-- Contenido Derecha -->
+            <div class="flex-fill overflow-auto">
+                <!-- Barra superior para dispositivos pequeños -->
+                <div class="p-2 d-md-none d-flex text-white bg-primary">
+                    <a data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" class="text-white" href="#">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <img src="Images/pucp.png" class="ms-3" width="75">
+                </div>
+                <!-- Barra de Usuario -->
+                <nav class="navbar navbar-dark bg-primary">
+                    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+                        <a class="navbar-brand text-white fw-semibold">Gestión de Siniestros</a>
+
+                        <div class="d-flex">
+                            <div class="dropdown ps-3">
+                                <button class="btn btn-user dropdown-toggle" id="btnUsuario" data-bs-toggle="dropdown" type="button" aria-expanded="false">
+                                    <i class="fas fa-user me-2"></i>
+                                    <asp:Label ID="lblUsuarioRol" runat="server" Text="Usuario"></asp:Label>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="btnUsuario">
+                                    <li>
+                                        <asp:LinkButton ID="btnCerrarSesion" runat="server" CssClass="dropdown-item"
+                                            OnClick="btnCerrarSesion_Click">Cerrar Sesión 
+                                        </asp:LinkButton>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+                <!-- Contenido de la Página Web -->
+                <div class="p-4">
+
+                    <asp:ContentPlaceHolder ID="cphContenido" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

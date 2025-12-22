@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="CentrosDeSalud" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftAsegWS/CentrosDeSalud?xsd=1" namespace="http://softasegws.services.softaseg.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="modificarCentrosDeSalud">
+    <part name="parameters" element="tns:modificarCentrosDeSalud" />
+  </message>
+  <message name="modificarCentrosDeSaludResponse">
+    <part name="parameters" element="tns:modificarCentrosDeSaludResponse" />
+  </message>
+  <message name="insertarCentrosDeSalud">
+    <part name="parameters" element="tns:insertarCentrosDeSalud" />
+  </message>
+  <message name="insertarCentrosDeSaludResponse">
+    <part name="parameters" element="tns:insertarCentrosDeSaludResponse" />
+  </message>
+  <message name="obtenerPorIdCentrosDeSalud">
+    <part name="parameters" element="tns:obtenerPorIdCentrosDeSalud" />
+  </message>
+  <message name="obtenerPorIdCentrosDeSaludResponse">
+    <part name="parameters" element="tns:obtenerPorIdCentrosDeSaludResponse" />
+  </message>
+  <message name="IOException">
+    <part name="fault" element="tns:IOException" />
+  </message>
+  <message name="InterruptedException">
+    <part name="fault" element="tns:InterruptedException" />
+  </message>
+  <message name="eliminarCentrosDeSalud">
+    <part name="parameters" element="tns:eliminarCentrosDeSalud" />
+  </message>
+  <message name="eliminarCentrosDeSaludResponse">
+    <part name="parameters" element="tns:eliminarCentrosDeSaludResponse" />
+  </message>
+  <message name="listarTodosCentrosDeSalud">
+    <part name="parameters" element="tns:listarTodosCentrosDeSalud" />
+  </message>
+  <message name="listarTodosCentrosDeSaludResponse">
+    <part name="parameters" element="tns:listarTodosCentrosDeSaludResponse" />
+  </message>
+  <message name="listarPorNombreCodigoRENIPRESS">
+    <part name="parameters" element="tns:listarPorNombreCodigoRENIPRESS" />
+  </message>
+  <message name="listarPorNombreCodigoRENIPRESSResponse">
+    <part name="parameters" element="tns:listarPorNombreCodigoRENIPRESSResponse" />
+  </message>
+  <portType name="CentrosDeSalud">
+    <operation name="modificarCentrosDeSalud">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/modificarCentrosDeSaludRequest" message="tns:modificarCentrosDeSalud" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/modificarCentrosDeSaludResponse" message="tns:modificarCentrosDeSaludResponse" />
+    </operation>
+    <operation name="insertarCentrosDeSalud">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/insertarCentrosDeSaludRequest" message="tns:insertarCentrosDeSalud" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/insertarCentrosDeSaludResponse" message="tns:insertarCentrosDeSaludResponse" />
+    </operation>
+    <operation name="obtenerPorIdCentrosDeSalud">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/obtenerPorIdCentrosDeSaludRequest" message="tns:obtenerPorIdCentrosDeSalud" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/obtenerPorIdCentrosDeSaludResponse" message="tns:obtenerPorIdCentrosDeSaludResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/obtenerPorIdCentrosDeSalud/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/obtenerPorIdCentrosDeSalud/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="eliminarCentrosDeSalud">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/eliminarCentrosDeSaludRequest" message="tns:eliminarCentrosDeSalud" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/eliminarCentrosDeSaludResponse" message="tns:eliminarCentrosDeSaludResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/eliminarCentrosDeSalud/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/eliminarCentrosDeSalud/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="listarTodosCentrosDeSalud">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/listarTodosCentrosDeSaludRequest" message="tns:listarTodosCentrosDeSalud" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/listarTodosCentrosDeSaludResponse" message="tns:listarTodosCentrosDeSaludResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/listarTodosCentrosDeSalud/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/listarTodosCentrosDeSalud/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="listarPorNombreCodigoRENIPRESS">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/listarPorNombreCodigoRENIPRESSRequest" message="tns:listarPorNombreCodigoRENIPRESS" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/listarPorNombreCodigoRENIPRESSResponse" message="tns:listarPorNombreCodigoRENIPRESSResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/listarPorNombreCodigoRENIPRESS/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/CentrosDeSalud/listarPorNombreCodigoRENIPRESS/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+  </portType>
+  <binding name="CentrosDeSaludPortBinding" type="tns:CentrosDeSalud">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="modificarCentrosDeSalud">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarCentrosDeSalud">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdCentrosDeSalud">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="eliminarCentrosDeSalud">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="listarTodosCentrosDeSalud">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="listarPorNombreCodigoRENIPRESS">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="CentrosDeSalud">
+    <port name="CentrosDeSaludPort" binding="tns:CentrosDeSaludPortBinding">
+      <soap:address location="http://localhost:8080/SoftAsegWS/CentrosDeSalud" />
+    </port>
+  </service>
+</definitions>

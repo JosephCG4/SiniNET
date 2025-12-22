@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="PolizasSOAT" targetNamespace="http://softasegws.services.softaseg.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftAsegWS/PolizasSOAT?xsd=1" namespace="http://softasegws.services.softaseg.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="obtenerPorIdPolizasSOAT">
+    <part name="parameters" element="tns:obtenerPorIdPolizasSOAT" />
+  </message>
+  <message name="obtenerPorIdPolizasSOATResponse">
+    <part name="parameters" element="tns:obtenerPorIdPolizasSOATResponse" />
+  </message>
+  <message name="IOException">
+    <part name="fault" element="tns:IOException" />
+  </message>
+  <message name="InterruptedException">
+    <part name="fault" element="tns:InterruptedException" />
+  </message>
+  <message name="eliminarPolizasSOAT">
+    <part name="parameters" element="tns:eliminarPolizasSOAT" />
+  </message>
+  <message name="eliminarPolizasSOATResponse">
+    <part name="parameters" element="tns:eliminarPolizasSOATResponse" />
+  </message>
+  <message name="insertarPolizasSOAT">
+    <part name="parameters" element="tns:insertarPolizasSOAT" />
+  </message>
+  <message name="insertarPolizasSOATResponse">
+    <part name="parameters" element="tns:insertarPolizasSOATResponse" />
+  </message>
+  <message name="listarTodosPolizasSOAT">
+    <part name="parameters" element="tns:listarTodosPolizasSOAT" />
+  </message>
+  <message name="listarTodosPolizasSOATResponse">
+    <part name="parameters" element="tns:listarTodosPolizasSOATResponse" />
+  </message>
+  <message name="modificarPolizasSOAT">
+    <part name="parameters" element="tns:modificarPolizasSOAT" />
+  </message>
+  <message name="modificarPolizasSOATResponse">
+    <part name="parameters" element="tns:modificarPolizasSOATResponse" />
+  </message>
+  <message name="listarPorNombreApellidoAseguradoPolizasSOAT">
+    <part name="parameters" element="tns:listarPorNombreApellidoAseguradoPolizasSOAT" />
+  </message>
+  <message name="listarPorNombreApellidoAseguradoPolizasSOATResponse">
+    <part name="parameters" element="tns:listarPorNombreApellidoAseguradoPolizasSOATResponse" />
+  </message>
+  <portType name="PolizasSOAT">
+    <operation name="obtenerPorIdPolizasSOAT">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/obtenerPorIdPolizasSOATRequest" message="tns:obtenerPorIdPolizasSOAT" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/obtenerPorIdPolizasSOATResponse" message="tns:obtenerPorIdPolizasSOATResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/obtenerPorIdPolizasSOAT/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/obtenerPorIdPolizasSOAT/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="eliminarPolizasSOAT">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/eliminarPolizasSOATRequest" message="tns:eliminarPolizasSOAT" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/eliminarPolizasSOATResponse" message="tns:eliminarPolizasSOATResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/eliminarPolizasSOAT/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/eliminarPolizasSOAT/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="insertarPolizasSOAT">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/insertarPolizasSOATRequest" message="tns:insertarPolizasSOAT" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/insertarPolizasSOATResponse" message="tns:insertarPolizasSOATResponse" />
+    </operation>
+    <operation name="listarTodosPolizasSOAT">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/listarTodosPolizasSOATRequest" message="tns:listarTodosPolizasSOAT" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/listarTodosPolizasSOATResponse" message="tns:listarTodosPolizasSOATResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/listarTodosPolizasSOAT/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/listarTodosPolizasSOAT/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+    <operation name="modificarPolizasSOAT">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/modificarPolizasSOATRequest" message="tns:modificarPolizasSOAT" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/modificarPolizasSOATResponse" message="tns:modificarPolizasSOATResponse" />
+    </operation>
+    <operation name="listarPorNombreApellidoAseguradoPolizasSOAT">
+      <input wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/listarPorNombreApellidoAseguradoPolizasSOATRequest" message="tns:listarPorNombreApellidoAseguradoPolizasSOAT" />
+      <output wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/listarPorNombreApellidoAseguradoPolizasSOATResponse" message="tns:listarPorNombreApellidoAseguradoPolizasSOATResponse" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/listarPorNombreApellidoAseguradoPolizasSOAT/Fault/IOException" name="IOException" message="tns:IOException" />
+      <fault wsam:Action="http://softasegws.services.softaseg.pucp.edu.pe/PolizasSOAT/listarPorNombreApellidoAseguradoPolizasSOAT/Fault/InterruptedException" name="InterruptedException" message="tns:InterruptedException" />
+    </operation>
+  </portType>
+  <binding name="PolizasSOATPortBinding" type="tns:PolizasSOAT">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="obtenerPorIdPolizasSOAT">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="eliminarPolizasSOAT">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="insertarPolizasSOAT">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosPolizasSOAT">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="modificarPolizasSOAT">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPorNombreApellidoAseguradoPolizasSOAT">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+      <fault name="InterruptedException">
+        <soap:fault use="literal" name="InterruptedException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="PolizasSOAT">
+    <port name="PolizasSOATPort" binding="tns:PolizasSOATPortBinding">
+      <soap:address location="http://localhost:8080/SoftAsegWS/PolizasSOAT" />
+    </port>
+  </service>
+</definitions>
