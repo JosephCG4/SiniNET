@@ -22,17 +22,12 @@ Esta separación permite un código más mantenible, escalable y fácil de enten
 - Base de datos: (indicar si usas SQL Server, MySQL, etc.)
 
 ## Autor/es
-Joseph Rolando Cajas García 
-Estudiante de Ingeniería Informática en formación (PUCP)
+Joseph Rolando Cajas García - Estudiante de Ingeniería Informática en formación (PUCP)
 
-Fernando Enrique Durán Mendoza
-Estudiante de Ingeniería Informática en formación (PUCP)
+Fernando Enrique Durán Mendoza - Estudiante de Ingeniería Informática en formación (PUCP)
 
-Luis Joaquín Sarrín Gonzáles
-Estudiante de Ingeniería Informática en formación (PUCP)
+Luis Joaquín Sarrín Gonzáles -Estudiante de Ingeniería Informática en formación (PUCP)
 
-Luis Anderson Carhuayo Ramos
-Estudiante de Ingeniería Informática en formación (PUCP)
+Luis Anderson Carhuayo Ramos -Estudiante de Ingeniería Informática en formación (PUCP)
 
-Angel Ruben Cori Bolivar
-Estudiante de Ingeniería Informática en formación (PUCP)
+Angel Ruben Cori Bolivar - Estudiante de Ingeniería Informática en formación (PUCP)
