@@ -26,8 +26,8 @@ Joseph Rolando Cajas García - Estudiante de Ingeniería Informática en formaci
 
 Fernando Enrique Durán Mendoza - Estudiante de Ingeniería Informática en formación (PUCP)
 
-Luis Joaquín Sarrín Gonzáles -Estudiante de Ingeniería Informática en formación (PUCP)
+Luis Joaquín Sarrín Gonzáles - Estudiante de Ingeniería Informática en formación (PUCP)
 
-Luis Anderson Carhuayo Ramos -Estudiante de Ingeniería Informática en formación (PUCP)
+Luis Anderson Carhuayo Ramos - Estudiante de Ingeniería Informática en formación (PUCP)
 
 Angel Ruben Cori Bolivar - Estudiante de Ingeniería Informática en formación (PUCP)
